@@ -1,0 +1,78 @@
+<?php
+require('../cgi-bin/functions.php');
+require('../cgi-bin/vars.php');
+$start = starttime();
+
+$ts_pw = posix_getpwuid(posix_getuid());
+$ts_mycnf = parse_ini_file($ts_pw['dir'] . "/.my.cnf");
+$db = mysql_connect('sql-user-m.toolserver.org', $ts_mycnf['user'], $ts_mycnf['password']);
+unset($ts_mycnf, $ts_pw);
+
+mysql_select_db('toolserver', $db) or die('Unable to contact database');
+
+echo "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>
+<HTML>
+<HEAD>
+<TITLE>
+Toolserver Database Information $sep $sitename
+</title>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>\n";
+
+genheader();
+
+echo "\r<br>
+Which project would you like to find out about?
+<br>
+<form action=\"answer.php\" method=\"get\">
+Language: 
+<select name=\"lang\">";
+
+$query_lang="SELECT `lang`,`english_name` FROM `language` WHERE `english_name`!=-1 ORDER BY `english_name` ASC";
+$result_lang=mysql_query($query_lang);
+
+$num_lang=mysql_numrows($result_lang);
+
+$tot_lang=0;
+
+while ($tot_lang < $num_lang)
+{
+$langcode=mysql_result($result_lang,$tot_lang,"lang");
+$langname=mysql_result($result_lang,$tot_lang,"english_name");
+
+echo "<option value='$langcode'>$langname</option>\r";
+
+$tot_lang++;
+}
+echo "\r</select>
+<br>
+<br>
+Project: 
+<select name=\"family\">\r";
+
+$query_proj="SELECT DISTINCT `family` FROM `wiki` WHERE `family` LIKE 'wiki%'";
+$result_proj=mysql_query($query_proj);
+
+$num_proj=mysql_numrows($result_proj);
+
+$tot_proj=0;
+
+while ($tot_proj < $num_proj)
+{
+$projcode=mysql_result($result_proj,$tot_proj,"family");
+$projname=ucwords($projcode); 
+
+echo "<option value='$projcode'>$projname</option>\r";
+
+$tot_proj++;
+}
+echo "\r</select>
+<br>
+<br>
+<input type=\"submit\" value=\"Find it!\"><input type=\"reset\" name=\"reset\" value=\"Reset the form\">
+</form>
+<br>";
+endtime($start);
+genfooter();
+echo "\r</body>
+</html>";
+?>
