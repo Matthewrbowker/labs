@@ -32,7 +32,7 @@ I have the following tools avalible:
 <li><a href=\"serverinfo\">Toolserver Database Information tool</a> - allows you to check which server a specific language's database is mirrored on Toolserver.
 <li><a href=\"CNRD\">Cross-Namespace Redirects</a> - shows redirects outside of their namespace.
 </ul>
-If you need to contact me, please do so <a href=\"http://en.wikipedia.org/w/index.php?title=User_talk:Matthewrbowker&action=edit&section=new\" target=_blank>on my English Wikipedia talk page</a>.  If you'd like the source code for my tools, please visit <a href=\"http://svn.toolserver.org/svnroot/matthewrbowker\" target=_blank>the SVN repository I maintain</a>.\r";
+If you need to contact me, please do so <a href=\"http://en.wikipedia.org/w/index.php?title=User_talk:Matthewrbowker&action=edit&section=new\" target=_blank>on my English Wikipedia talk page</a>.  If you'd like the source code for my tools, please visit <a href=\"https://github.com/Matthewrbowker/toolserver\" target=_blank>the GitHub repository I maintain</a>.\r";
 endtime($start);
 genfooter();
 echo "</body>

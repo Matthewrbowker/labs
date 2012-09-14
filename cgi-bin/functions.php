@@ -19,11 +19,15 @@ function genheader()
 
 $versions = parse_ini_file('versions.ini', true);
 
-$dir = $_SERVER['REQUEST_URI'];
-$dir = basename($dir);
-$dir = trim($dir, "/");
-$dir = strtolower($dir);
-if ($dir == '~matthewrbowker' || $dir == 'toolserver') $dir = 'root';
+
+
+$cwd = getcwd();
+$dirarray = explode("/",$cwd);
+if (ISSET($dirarray[4])) $dir = $dirarray[4];
+else $dir = $dirarray[3];
+$dir = strtolower($dir); 
+
+if ($dir == '~matthewrbowker' || $dir == 'toolserver' || $dir == 'public_html') $dir = 'root';
 
 $name = $versions["$dir"]["name"] or die("Error: This tool is not registered in Matthewrbowker's tool database.");
 $version = $versions["$dir"]["version"];
