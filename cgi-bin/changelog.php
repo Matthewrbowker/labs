@@ -50,7 +50,7 @@ Changelog - $name
 while (0 <= $totnum) {
 $changes = $data[$totnum]['changes'];
 
-$changes = str_replace("\r","</li>\r<li>",$changes);
+$changes = str_replace("\n","</li>\r<li>",$changes);
 echo "<H3>" . $data[$totnum]['version'] . "</H3>\r
 <UL>
 <li>" . $changes . "</li>

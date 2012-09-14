@@ -13,10 +13,9 @@ $sitename
 <link rel=\"stylesheet\" type=\"text/css\" href=\"cgi-bin/master.css\">";
 genheader($_SERVER['REQUEST_URI']);
 echo "\r
-Hello and welcome!  I'm <a href=\"http://en.wikipedia.org/wiki/User:Matthewrbowker\" target=_blank>Matthew</a> and these are my tools:
-
+Hello and welcome!  I'm <a href=\"http://en.wikipedia.org/wiki/User:Matthewrbowker\" target=_blank>Matthew</a> and these are my tools!
 <br>
-<H3>Tools:</H3>
+<br>
 I have the following tools avalible:
 <br>
 <br>
