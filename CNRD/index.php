@@ -50,7 +50,8 @@ $result=mysql_query($query, $db);
 
 $num=mysql_numrows($result);
 
-echo "<HTML>
+echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
+<HTML>
 <HEAD>
 <TITLE>
 Cross-Namespace Redirects $sep $sitename

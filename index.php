@@ -10,8 +10,7 @@ echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://
 <title>
 $sitename
 </title>
-<link rel=\"stylesheet\" type=\"text/css\" href=\"cgi-bin/master.css\">
-<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\r";
+<link rel=\"stylesheet\" type=\"text/css\" href=\"cgi-bin/master.css\">";
 genheader($_SERVER['REQUEST_URI']);
 echo "\r
 Hello and welcome!  I'm <a href=\"http://en.wikipedia.org/wiki/User:Matthewrbowker\" target=_blank>Matthew</a> and these are my tools:
@@ -32,7 +31,7 @@ I have the following tools avalible:
 <li><a href=\"serverinfo\">Toolserver Database Information tool</a> - allows you to check which server a specific language's database is mirrored on Toolserver.
 <li><a href=\"CNRD\">Cross-Namespace Redirects</a> - shows redirects outside of their namespace.
 </ul>
-If you need to contact me, please do so <a href=\"http://en.wikipedia.org/w/index.php?title=User_talk:Matthewrbowker&action=edit&section=new\" target=_blank>on my English Wikipedia talk page</a>.  If you'd like the source code for my tools, please visit <a href=\"https://github.com/Matthewrbowker/toolserver\" target=_blank>the GitHub repository I maintain</a>.\r";
+If you need to contact me, please do so <a href=\"http://en.wikipedia.org/w/index.php?title=User_talk:Matthewrbowker&amp;action=edit&amp;section=new\" target=_blank>on my English Wikipedia talk page</a>.  If you'd like the source code for my tools, please visit <a href=\"https://github.com/Matthewrbowker/toolserver\" target=_blank>the GitHub repository I maintain</a>.\r";
 endtime($start);
 genfooter();
 echo "</body>
