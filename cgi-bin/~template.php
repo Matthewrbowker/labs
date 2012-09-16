@@ -11,7 +11,7 @@ NAME $sep $sitename
 </title>
 <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" >\r";
 
-genheader('000000','white','NAME','LOG','0_1','no','');
+genheader();
 
 echo "STUFF GOES HERE";
 

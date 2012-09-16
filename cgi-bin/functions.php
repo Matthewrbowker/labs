@@ -14,20 +14,18 @@ return $string;
 
 }
 
-function genheader()
-{
-
+function genheader() {
 $versions = parse_ini_file('versions.ini', true);
-
-
 
 $cwd = getcwd();
 $dirarray = explode("/",$cwd);
-if (ISSET($dirarray[4])) $dir = $dirarray[4];
+if ($dirarray[4]=='htdocs' && ISSET($dirarray[6])) $dir = $dirarray[6];
+else if (ISSET($dirarray[5])) $dir = $dirarray[5];
+else if (ISSET($dirarray[4])) $dir = $dirarray[4];
 else $dir = $dirarray[3];
 $dir = strtolower($dir); 
 
-if ($dir == '~matthewrbowker' || $dir == 'toolserver' || $dir == 'public_html') $dir = 'root';
+if ($dir == '~matthewrbowker' || $dir == 'toolserver' || $dir == 'public_html' || $dir=='htdocs') $dir = 'root';
 
 $name = $versions["$dir"]["name"] or die("Error: This tool is not registered in Matthewrbowker's tool database.");
 $version = $versions["$dir"]["version"];

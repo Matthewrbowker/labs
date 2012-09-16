@@ -29,6 +29,7 @@ I have the following tools avalible:
 <li><a href=\"projectinfo\">Project Information tool</a> - shows information about different projects.
 <li><a href=\"serverinfo\">Toolserver Database Information tool</a> - allows you to check which server a specific language's database is mirrored on Toolserver.
 <li><a href=\"CNRD\">Cross-Namespace Redirects</a> - shows redirects outside of their namespace.
+<li><a href=\"logs\">Logs</a> - of my bots.
 </ul>
 If you need to contact me, please do so <a href=\"http://en.wikipedia.org/w/index.php?title=User_talk:Matthewrbowker&amp;action=edit&amp;section=new\" target=_blank>on my English Wikipedia talk page</a>.  If you'd like the source code for my tools, please visit <a href=\"https://github.com/Matthewrbowker/toolserver\" target=_blank>the GitHub repository I maintain</a>.\r";
 endtime($start);
