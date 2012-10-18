@@ -123,4 +123,29 @@ echo "<hr width='75%'>
 <a href=\"http://www.anybrowser.org/campaign/\" target=\"_blank\"><img src=\"http://toolserver.org/~matthewrbowker/images/anybrowser.jpg\" width=\"88\" height=\"31\" alt=\"Viewable With Any Browser\"></a></p>\r";
 }
 
+function replag($server="s1") {
+	$servers = array("commons-s1" => "0",
+	"commons-s2" => "1",
+	"commons-s3" => "2",
+	"commons-s5" => "3",
+	"commons-s6" => "4",
+	"commons-s7" => "5",
+	"s1" => "6",
+	"s2" => "7",
+	"s3" => "8",
+	"s5" => "9",
+	"s6" => "10",
+	"s7" => "11");
+	$replagfile = file("https://toolserver.org/~bryan/stats/replag/replag");
+	$replag = explode(" ",trim($replagfile[$servers[$server]]) );
+	if ($replag[1] > 600) {
+		echo "<table border=\"1\" width=\"100%\">
+		<tr>
+		<td bgcolor=\"#FF0000\"><font color=\"white\"><center><b>Attention:</b> Replication lag on Toolserver is high right now.  These results may be outdated.</center>
+		</td>
+		</tr>
+		</table>";
+	}
+}
+
 ?>

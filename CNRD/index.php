@@ -57,6 +57,7 @@ echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://
 Cross-Namespace Redirects $sep $sitename
 </TITLE>";
 genheader();
+replag();
 echo "
 Below is a list of Redirects that redirect outside their namespace.  I borrowed the query used to generate this report form <a href=\"http://toolserver.org/~tb/CNRS/\" target=\"_blank\">TopBannana</a>, then I adapted it to exclude several common redirects.<br><br>
 <br>

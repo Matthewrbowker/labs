@@ -216,7 +216,7 @@ if (cat == '1') {
 		document.mainform.subsubcat.options[12] = new Option("Road (Busses)","road-busses", false, false);
 		document.mainform.subsubcat.options[13] = new Option("Road (Motorcycles)","road-motorcycles", false, false);
 		document.mainform.subsubcat.options[14] = new Option("Road (Trucks)","road-trucks", false, false);
-		document.mainform.subsubcat.options[15] = new Option("Road (Roads and Highways)","road - highways", false, false);
+		document.mainform.subsubcat.options[15] = new Option("Road (Roads and Highways)","road-highways", false, false);
 		document.mainform.subsubcat.options[16] = new Option("Road (Other)","road-other", false, false);
 		document.mainform.subsubcat.options[17] = new Option("Rockets and Spacecraft (Fuels)","ras-fuels", false, false);
 		document.mainform.subsubcat.options[18] = new Option("Rockets and Spacecraft (Spacecraft)","ras-craft", false, false);
@@ -666,36 +666,105 @@ else if (cat == '3') {
 		document.mainform.subcat.options[2] = new Option("By nationality","nationality", false, false);
 	}
 	}
-else if (cat == '4') {
-	document.mainform.subcat.options.length=0;
-	subcat1.className='unhidden';
-	subcat2.className='unhidden';
-	document.mainform.subcat.options[0] = new Option("Please choose one","none", false, false);
-	document.mainform.subcat.options[1] = new Option("Accounting","accounting", false, false);
-	document.mainform.subcat.options[2] = new Option("Business","business", false, false);
-	document.mainform.subcat.options[3] = new Option("Companies","companies", false, false);
-	document.mainform.subcat.options[4] = new Option("Econometrics","econmetrics", false, false);
-	document.mainform.subcat.options[5] = new Option("Economic Policy","econpol", false, false);
-	document.mainform.subcat.options[6] = new Option("Economic theory and history","econhist", false, false);
-	document.mainform.subcat.options[7] = new Option("Economics","econ", false, false);
-	document.mainform.subcat.options[8] = new Option("Economists","econists", false, false);
-	document.mainform.subcat.options[9] = new Option("Finance","finance", false, false);
-	document.mainform.subcat.options[10] = new Option("Human resources","hr", false, false);
-	document.mainform.subcat.options[11] = new Option("Law firms","lawfirms", false, false);
-	document.mainform.subcat.options[12] = new Option("Management","management", false, false);
-	document.mainform.subcat.options[13] = new Option("Non-profit orginizations","npos", false, false);
-	document.mainform.subcat.options[14] = new Option("People in business","pib", false, false);
-	document.mainform.subcat.options[15] = new Option("Terminology (Business)","term-busi", false, false);
-	document.mainform.subcat.options[16] = new Option("Terminology (Economics)","term-econ", false, false);
+else if (cat == '4') { //Business and economics
+	if (scat==1) { //Business
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'unhidden';
+		subsubcat2.className = 'unhidden';
+		document.mainform.subsubcat.options[0] = new Option("Please choose one","none",false,true);
+		document.mainform.subsubcat.options[1] = new Option("Companies","companies-byname",false,false);
+		document.mainform.subsubcat.options[2] = new Option("Human Resources","hr",false,false);
+		document.mainform.subsubcat.options[3] = new Option("Law firms","lawfirms",false,false);
+		document.mainform.subsubcat.options[4] = new Option("Management","management",false,false);
+		document.mainform.subsubcat.options[5] = new Option("Non-profits","nonprofits-byname",false,false);
+		document.mainform.subsubcat.options[6] = new Option("Business terminology","terminology",false,false);
+		document.mainform.subsubcat.options[7] = new Option("Other","other",false,false);
 	}
-else if (cat == '5') {
-	if (scat=='40') {
+	else if (scat==2) { //Cooperatives
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.classname = 'unhidden';
+		subsubcat2.classname = 'unhidden';
+		document.mainform.subsubcat.options[0] = new Option("Please choose one","none",false,true);
+		document.mainform.subsubcat.options[1] = new Option("Agricultural cooperatives","agricultural",false,false);
+		document.mainform.subsubcat.options[2] = new Option("Cooperative organisers","organisers",false,false);
+		document.mainform.subsubcat.options[3] = new Option("Cooperative banks & credit unions","banks",false,false);
+		document.mainform.subsubcat.options[4] = new Option("Cooperative federations","federations",false,false);
+		document.mainform.subsubcat.options[5] = new Option("Cooperative movement","movement",false,false);
+		document.mainform.subsubcat.options[6] = new Option("Consumer and food cooperatives","consumer",false,false);
+		document.mainform.subsubcat.options[7] = new Option("Housing cooperatives","housing",false,false);
+		document.mainform.subsubcat.options[8] = new Option("Utility cooperatives","utility",false,false);
+		document.mainform.subsubcat.options[9] = new Option("Worker cooperatives","worker",false,false);
+		document.mainform.subsubcat.options[10] = new Option("Other","other",false,false);
+	}
+	else if (scat==3) { //Economics
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.classname = 'unhidden';
+		subsubcat2.classname = 'unhidden';
+		document.mainform.subsubcat.options[0] = new Option("Please choose one","none",false,true);
+		document.mainform.subsubcat.options[1] = new Option("Econometrics","econometrics",false,false);
+		document.mainform.subsubcat.options[2] = new Option("Economic policy","economic",false,false);
+		document.mainform.subsubcat.options[3] = new Option("Economic theory and history","theory-byname",false,false);
+		document.mainform.subsubcat.options[4] = new Option("Economists","economists",false,false);
+		document.mainform.subsubcat.options[5] = new Option("Terminology","terminology",false,false);
+		document.mainform.subsubcat.options[6] = new Option("Other","other",false,false);
+		//
+	}
+	else if (scat==4) { //Finance
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("By Name","byname",false,true);
+	}
+	else {
+	  document.mainform.subcat.options.length=0;
+	  subcat1.className='unhidden';
+	  subcat2.className='unhidden';
+	  document.mainform.subcat.options[0] = new Option("Please choose one",'none', false, true);
+	  document.mainform.subcat.options[1] = new Option("Business","business",false,false);
+	  document.mainform.subcat.options[2] = new Option("Cooperatives","cooperatives",false,false);
+	  document.mainform.subcat.options[3] = new Option("Economics","economics",false,false);
+	  document.mainform.subcat.options[4] = new Option("Finance","finance",false,false);
+	}
+	}
+else if (cat == '5') { //Mathematics
+	if (scat==40) { //Mathemiticians
 		subsubcat1.className = 'hidden';
 		subsubcat2.className = 'hidden';
 		document.mainform.subsubcat.options.length = 0;
 		document.mainform.subsubcat.options[0] = new Option("Byname","byname",true,false);
 	}
-	else if (scat != '') {
+	else if (scat==38) { //Mathematical logic
+		subsubcat1.className = 'unhidden';
+		subsubcat2.className = 'unhidden';
+		document.mainform.subsubcat.options.length = 0;
+		document.mainform.subsubcat.options[0] = new Option("Please choose one",'none',false,true);
+		document.mainform.subsubcat.options[1] = new Option("Model theory, proof theory, and recursion theory","model",false,false);
+		document.mainform.subsubcat.options[2] = new Option("Set Theory","set",false,false);
+		document.mainform.subsubcat.options[3] = new Option("Set Theory relations","setrelations",false,false);
+		document.mainform.subsubcat.options[4] = new Option("Other","other",false,false);
+	}
+	else if (scat==45) { //Number Theory
+		subsubcat1.className = 'unhidden';
+		subsubcat2.className = 'unhidden';
+		document.mainform.subsubcat.options.length = 0;
+		document.mainform.subsubcat.options[0] = new Option("Please choose one",'none',false,true);
+		document.mainform.subsubcat.options[1] = new Option("Elementary number theory","elementary",false,false);
+		document.mainform.subsubcat.options[2] = new Option("Algebraic number theory","algebraic",false,false);
+		document.mainform.subsubcat.options[3] = new Option("Analytic number theory","analytic",false,false);
+	}
+	else if (scat==58) { // Topology
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'unhidden';
+		subsubcat2.className = 'unhidden';
+		document.mainform.subsubcat.options[0] = new Option("Please choose one","none",true,false);
+		document.mainform.subsubcat.options[1] = new Option("Algebraic topology","algebraic",false,false);
+		document.mainform.subsubcat.options[2] = new Option("General topology","general",false,false);
+		document.mainform.subsubcat.options[3] = new Option("Geometric topology","geometric",false,false);
+		document.mainform.subsubcat.options[4] = new Option("Knot theory","knot",false,false);
+		document.mainform.subsubcat.options[5] = new Option("Set-theoretic topology","set",false,false);
+		document.mainform.subsubcat.options[6] = new Option("Stable homotopy theory","stable",false,false);
+	}
+	else if (scat != 0) { // Others
 		subsubcat1.className = 'hidden';
 		subsubcat2.className = 'hidden';
 		document.mainform.subsubcat.options.length = 0;
@@ -752,47 +821,191 @@ else if (cat == '5') {
 		document.mainform.subcat.options[42] = new Option("Matrices","matrices", false, false);
 		document.mainform.subcat.options[43] = new Option("Measure theory","measure-theory", false, false);
 		document.mainform.subcat.options[44] = new Option("Noncommutative geometry","noncommutative-geometry", false, false);
-		document.mainform.subcat.options[45] = new Option("Numerical analysis","numerical-analysis", false, false);
-		document.mainform.subcat.options[46] = new Option("Order theory","order-theory", false, false);
-		document.mainform.subcat.options[47] = new Option("Other","other", false, false);
-		document.mainform.subcat.options[48] = new Option("Probability theory","probability-theory", false, false);
-		document.mainform.subcat.options[49] = new Option("Real analysis","real-analysis", false, false);
-		document.mainform.subcat.options[50] = new Option("Recreational mathematics","recreational-mathematics", false, false);
-		document.mainform.subcat.options[51] = new Option("Reference desk for mathematics","reference-desk-for-mathematics", false, false);
+		document.mainform.subcat.options[45] = new Option("Number Theory","numbertheory",false,false);
+		document.mainform.subcat.options[46] = new Option("Numerical analysis","numerical-analysis", false, false);
+		document.mainform.subcat.options[47] = new Option("Order theory","order-theory", false, false);
+		document.mainform.subcat.options[48] = new Option("Other","other", false, false);
+		document.mainform.subcat.options[49] = new Option("Probability theory","probability-theory", false, false);
+		document.mainform.subcat.options[50] = new Option("Real analysis","real-analysis", false, false);
+		document.mainform.subcat.options[51] = new Option("Recreational mathematics","recreational-mathematics", false, false);
 		document.mainform.subcat.options[52] = new Option("Representation theory (incl. harmonic analysis)","representation-theory-(incl.-harmonic-analysis)", false, false);
 		document.mainform.subcat.options[53] = new Option("Semigroup theory","semigroup-theory", false, false);
 		document.mainform.subcat.options[54] = new Option("Set-theoretic topology","set-theoretic-topology", false, false);
 		document.mainform.subcat.options[55] = new Option("Special functions","special-functions", false, false);
 		document.mainform.subcat.options[56] = new Option("Stable homotopy theory","stable-homotopy-theory", false, false);
 		document.mainform.subcat.options[57] = new Option("Statistics","statistics", false, false);
+		document.mainform.subcat.options[58] = new Option("Topology","topology", false, false);
+		document.mainform.subcat.options[59] = new Option("Statistics","statistics", false, false);
 	}
 }
-else if (cat == '6') {
-	document.mainform.subcat.options.length=0;
-	subcat1.className='unhidden';
-	subcat2.className='unhidden';
-	document.mainform.subcat.options[0] = new Option("Please choose one","none", false, false);
-	document.mainform.subcat.options[1] = new Option("Albums","albums", false, false);
-	document.mainform.subcat.options[2] = new Option("Bands, performers and songwriters","bands", false, false);
-	document.mainform.subcat.options[3] = new Option("Chamber ensembles","chamber", false, false);
-	document.mainform.subcat.options[4] = new Option("Classical composers","classicalcomposers", false, false);
-	document.mainform.subcat.options[5] = new Option("Classical compositions","clasicalcompositions", false, false);
-	document.mainform.subcat.options[6] = new Option("Conductors","conductors", false, false);
-	document.mainform.subcat.options[7] = new Option("Critics, historians, journalists and publications","critics", false, false);
-	document.mainform.subcat.options[8] = new Option("Festivals, concerts and awards","festivals", false, false);
-	document.mainform.subcat.options[9] = new Option("Genres","genres", false, false);
-	document.mainform.subcat.options[10] = new Option("Hip hop","hiphop", false, false);
-	document.mainform.subcat.options[11] = new Option("Instruments","instruments", false, false);
-	document.mainform.subcat.options[12] = new Option("Jazz","jazz", false, false);
-	document.mainform.subcat.options[13] = new Option("Music Theory","musictheory", false, false);
-	document.mainform.subcat.options[14] = new Option("Orchestras","orchestras", false, false);
-	document.mainform.subcat.options[15] = new Option("Organizations","orginizations", false, false);
-	document.mainform.subcat.options[16] = new Option("Producers, sound engineers, etc.","producers", false, false);
-	document.mainform.subcat.options[17] = new Option("Record labels","lables", false, false);
-	document.mainform.subcat.options[18] = new Option("Schools and music education","schools", false, false);
-	document.mainform.subcat.options[19] = new Option("Songs","songs", false, false);
-	document.mainform.subcat.options[20] = new Option("Stage musicals","stagemusicals", false, false);
-	document.mainform.subcat.options[21] = new Option("Technical and business terms","terms", false, false);
+else if (cat == '6') { //Music
+	if (scat == 1) { // Bands, performers, and songwriters
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("By Name","byname",true,false);
+	}
+	else if (scat == 2) { // Classical Composers
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("By Name","byname",true,false);
+	}
+	else if (scat == 3) { // Classical Compositions
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("By Name","byname",true,false);
+	}
+	else if (scat == 4) { // Conductors
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("All","all",true,false);
+	}
+	else if (scat == 5) { //Critics, historians, journalists, and publications
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'unhidden';
+		subsubcat2.className = 'unhidden';
+		document.mainform.subsubcat.options[0] = new Option("Please choose one","none",true,false);
+		document.mainform.subsubcat.options[1] = new Option("People","people",false,false);
+		document.mainform.subsubcat.options[2] = new Option("Other","other",false,false);
+	}
+	else if (scat == 6) { // Disographies
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("All","all",true,false);
+	}
+	else if (scat == 7) { // Festivals, concerts, and awards
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("All","all",true,false);
+	}
+	else if (scat == 8) { //Genres
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'unhidden';
+		subsubcat2.className = 'unhidden';
+		document.mainform.subsubcat.options[0] = new Option("Please choose one","none",true,false);
+	}
+	else if (scat == 9) { // Hip-hop
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("By name","byname",true,false);
+	}
+	else if (scat == 10) { // Instruments
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("By name","byname",true,false);
+	}
+	else if (scat == 11) { // Jazz
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("By name","byname",true,false);
+	}
+	else if (scat == 12) { // Music Theory
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("All","all",true,false);
+	}
+	else if (scat == 13) { // Orchestras
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("all","all",true,false);
+	}
+	else if (scat == 14) { // Orgenizations
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("all","all",true,false);
+	}
+	else if (scat == 13) { // Orchestras
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("all","all",true,false);
+	}
+	else if (scat == 14) { // Orginizations
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("all","all",true,false);
+	}
+	else if (scat == 15) { // Producers, sound engineers, etc
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("all","all",true,false);
+	}
+	else if (scat == 16) { // Record Labels
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("all","all",true,false);
+	}
+	else if (scat == 17) { // Recording Studios
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("all","all",true,false);
+	}
+	else if (scat == 18) { // Schools and Music Education
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("all","all",true,false);
+	}
+	else if (scat == 19) { // Songs
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("By name","byname",true,false);
+	}
+	else if (scat == 20) { // Stage Musicals
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("all","all",true,false);
+	}
+	else if (scat == 21) { // Technical and business terms
+		document.mainform.subsubcat.options.length = 0;
+		subsubcat1.className = 'hidden';
+		subsubcat2.className = 'hidden';
+		document.mainform.subsubcat.options[0] = new Option("all","all",true,false);
+	}
+	else {
+		document.mainform.subcat.options.length=0;
+		subcat1.className='unhidden';
+		subcat2.className='unhidden';
+		document.mainform.subsubcat.options[0] = new Option("Please choose one","none", true, false);
+		document.mainform.subsubcat.options[1] = new Option("Bands, performers and songwriters","bands-performers-and-songwriters", false, false);
+		document.mainform.subsubcat.options[2] = new Option("Classical composers","classical-composers", false, false);
+		document.mainform.subsubcat.options[3] = new Option("Classical compositions","classical-compositions", false, false);
+		document.mainform.subsubcat.options[4] = new Option("Conductors","conductors", false, false);
+		document.mainform.subsubcat.options[5] = new Option("Critics, historians, journalists, and publications","critics-historians-journalists-and-publications", false, false);
+		document.mainform.subsubcat.options[6] = new Option("Discographies","discographies", false, false);
+		document.mainform.subsubcat.options[7] = new Option("Festivals, concerts and awards","festivals-concerts-and-awards", false, false);
+		document.mainform.subsubcat.options[8] = new Option("Genres","genres", false, false);
+		document.mainform.subsubcat.options[9] = new Option("Hip hop","hip-hop", false, false);
+		document.mainform.subsubcat.options[10] = new Option("Instruments","instruments", false, false);
+		document.mainform.subsubcat.options[11] = new Option("Jazz","jazz", false, false);
+		document.mainform.subsubcat.options[12] = new Option("Music theory","music-theory", false, false);
+		document.mainform.subsubcat.options[13] = new Option("Orchestras","orchestras", false, false);
+		document.mainform.subsubcat.options[14] = new Option("Organizations","organizations", false, false);
+		document.mainform.subsubcat.options[15] = new Option("Producers, sound engineers, etc.","producers-sound-engineers-etc.", false, false);
+		document.mainform.subsubcat.options[16] = new Option("Record labels","record-labels", false, false);
+		document.mainform.subsubcat.options[17] = new Option("Recording studios","recording-studios", false, false);
+		document.mainform.subsubcat.options[18] = new Option("Schools and music education","schools-and-music-education", false, false);
+		document.mainform.subsubcat.options[19] = new Option("Songs","songs", false, false);
+		document.mainform.subsubcat.options[20] = new Option("Stage musicals","stage-musicals", false, false);
+		document.mainform.subsubcat.options[21] = new Option("Technical and business terms","technical-and-business-terms", false, false);
+	}
 	}
 else if (cat == '7') {
 	document.mainform.subcat.options.length=0;
@@ -880,6 +1093,7 @@ function validate() {
 	var subcat=document.forms["mainform"]["subcat"].value;
 	var subsubcat=document.forms["mainform"]["subsubcat"].value;
 	var uname=document.forms["mainform"]["username"].value;
+	var check=document.forms["mainform"]["doublecheck"].checked;
 	if (subj==null || subj=="") {
 		alert("Subject must be filled out!");
 		subject.className='red';
@@ -900,15 +1114,19 @@ function validate() {
 		subsubcat1.className='red';
 		return false;
 	}
+	//else if (check == false || check==null || check=='') {
+	//	alert("Please read and agree to the agreement.");
+	//	return false;
+	//}
 	else {
-		return false;
+		return true;
 	}
 }
 
 function checkbox() {
 	var cb = document.mainform.doublecheck.checked;
 	if (cb == false) {
-		document.mainform.submit.disabled = false;
+		document.mainform.submit.disabled = true;
 		}
 	else{
 		document.mainform.submit.disabled = false;
@@ -935,7 +1153,7 @@ function resetform() {
 	subsubcat2.className='hidden';
 	document.mainform.subcat.options.length=0;
 	document.mainform.subsubcat.options.length=0;
-	document.mainform.submit.disabled=false;
+	document.mainform.submit.disabled=true;
 	document.mainform.doublecheck.checked = false;
 	unameinfo.innerHTML = " ";
 	}
