@@ -1,9 +1,9 @@
 <?php
 require("includes.php");
 
-//$site = new site();
+$site = new site();
 
-//$site ->gen_opening();
+$site ->gen_opening();
 
 if (isset($_GET['test'])) $testserver = true;
 
@@ -11,14 +11,9 @@ $bots = "<b>Bots</b>\n<ul>\n";
 $tools = "<b>Tools</b>\n<ul>\n";
 $test = "<b>Testing tools</b>\n<ul>\n";
 
-//$data = parse_ini_file('vars/versions.ini',true);
+$data = parse_ini_file('vars/versions.ini',true);
 
-//$keys = array_keys($data);
-
-echo memory_get_usage();
-
-die();
-
+$keys = array_keys($data);
 
 for($i=0,$c=count($data);$i<$c;$i++) {
 	if ($data[$keys[$i]]['homepage'] == 'bot') {
