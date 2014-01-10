@@ -1,0 +1,7 @@
+<?
+
+echo <<<LABEL
+SHARING BY MYSPACE
+LABEL;
+
+?>

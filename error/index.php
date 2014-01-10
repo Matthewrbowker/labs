@@ -1,11 +1,9 @@
 <?php
-require('../cgi-bin/functions.php');
-require('../cgi-bin/vars.php');
+require('../includes.php');
 
-$start = starttime();
+$site = new site();
 
-if (!ISSET($_GET['error'])) { $error = 'generic'; }
-else { $error = $_GET['error']; }
+$error = $_GET['error'] or $error="generic";
 
 $errordata = array(
 '400' => array('brief' => 'Bad Request', 'full' => 'The request could not be understood by the server due to malformed syntax.'),
@@ -31,30 +29,17 @@ $errordata = array(
 '505' => array('brief' => 'HTTP Version not Supported', 'full' => 'The server does not support, or refuses to support, the HTTP protocol version that was used in the request message. '),
 'generic' => array('brief' => 'Error', 'full' => 'We were unable to process your error.  Please try again later')
 );
-echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
-<HTML>
-<HEAD>
-<TITLE>" . $errordata[$error]['brief'] . " $sep $sitename
-</TITLE>";
-genheader();
 
-echo "<h1>" . $errordata[$error]['brief'] . "</h1>
+$site -> gen_opening(); ?>
 
 <br>
 An error has occured!  Data on the error is below:
 <br>
 <ul>
-<li><b>Error number</b>: $error</li>
-<li><b>Description</b>: " . $errordata[$error]['full'] . "
+<li><b>Error number</b>: <?=$error?></li>
+<li><b>Description</b>: <?=$errordata[$error]['full']?>
 </ul>
-<br><br>
 
-Feel free to contact me <a href=\"http://en.wikipedia.org/w/index.php?title=User_talk:Matthewrbowker&action=edit&section=new\">on my talk page</a> to report this error.\r";
+Feel free to contact me <a href="http://en.wikipedia.org/w/index.php?title=User_talk:Matthewrbowker&amp;action=edit&amp;section=new">on my talk page</a> to report this error.
 
-endtime($start);
-genfooter();
-
-echo "</BODY>
-</HTML>";
-
-?>
+<? $site -> gen_closing(); ?>

@@ -1,1 +1,10 @@
 .DS_Store
+.DS_Store
+
+vars/vars.localhost.php
+
+vars/vars.tools.wmflabs.org.php
+
+vars/vars.toolserver.org.php
+
+images/

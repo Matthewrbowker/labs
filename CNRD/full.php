@@ -1,19 +1,17 @@
 <?php
-require('../cgi-bin/functions.php');
-require('../cgi-bin/vars.php');
+require('../includes.php');
 
-$start = starttime();
+$site = new site();
 
-$ts_pw = posix_getpwuid(posix_getuid());
-$ts_mycnf = parse_ini_file($ts_pw['dir'] . "/.my.cnf");
-$db = mysql_connect('enwiki-p.rrdb.toolserver.org', $ts_mycnf['user'], $ts_mycnf['password']);
-unset($ts_mycnf, $ts_pw);
+$db = mysql_connect($wpServer, $sqlUser, $sqlPw);
+ 
+mysql_select_db($wpDb, $db);
  
 mysql_select_db('enwiki_p', $db);
 
 $query="SELECT page_title, rd_namespace, rd_title
-FROM page p
-INNER JOIN redirect r on r.rd_from = p.page_id
+FROM " . $wpDbTablePrefix . "page p
+INNER JOIN " . $wpDbTablePrefix . "redirect r on r.rd_from = p.page_id
 WHERE r.rd_namespace NOT IN ( 0, 4, 10, 12, 14, 100 )
 AND   p.page_namespace = 0";
 
@@ -49,28 +47,18 @@ $result=mysql_query($query, $db);
 
 $num=mysql_numrows($result);
 
-echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
-<HTML>
-<HEAD>
-<TITLE>
-Cross-Namespace Redirects $sep $sitename
-</TITLE>";
-genheader('CC00CC','white','Cross-Namespace Redirects','CNRD','1_1','no','');
+$site -> gen_opening();
+
+replag("s1");
+
 echo "
 This detail page includes all of the redirects on the English Wikipedia.  To exclucde common redirects, see <a href=\"index.php\">this page</a>.<br><br>";
 
-if ($num=='0') {
-echo "<center>
-<H3>No redirects returned</H3>
-</center>";
-}
-
-else {
 $tot=0;
-echo "<TABLE border=1 width=\"100%\">
+echo "<TABLE style=\"text-align:center;width:100%;border-collapse:collapse;\">
 <tr>
-<td width=\"40%\"><u>Source Page</u></td>
-<td width=\"40%\"><u>Target Page</u></td>
+<td style=\"width:50%;border:#999999 dashed 1px\"><u>Source Page</u></td>
+<td style=\"width:50%;border:#999999 dashed 1px\"><u>Target Page</u></td>
 </tr>
 ";
 
@@ -86,21 +74,16 @@ $to_ns_rev=$ns[$to_ns];
 $to_ns_rev = str_replace(' ','_',$to_ns_rev);
 
 echo "<TR>
-<TD>
-<a href=\"http://en.wikipedia.org/w/index.php?title=$from&redirect=no\" target=_blank>$from</a>
+<TD style=\"border:#999999 dashed 1px\">
+<a href=\"" . $wpScriptHref . "?title=$from&amp;redirect=no\" target=_blank>$from</a>
 </td>
-<TD>
-<a href=\"http://en.wikipedia.org/w/index.php?title=$to_ns_rev:$to\" target=_blank>$to_ns_rev:$to</a>
+<TD style=\"border:#999999 dashed 1px\">
+<a href=\"" . $wpScriptHref . "?title=$to_ns_rev:$to\" target=_blank>$to_ns_rev:$to</a>
 </td>
 </tr>";
 $tot++;
 }
 echo "</TABLE>";
-}
 
-endtime($start);
-genfooter();
-
-echo "</body>
-</html>";
+$site ->gen_closing();
 ?>

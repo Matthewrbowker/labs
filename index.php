@@ -1,39 +1,61 @@
 <?php
-require("cgi-bin/functions.php");
-require("cgi-bin/vars.php");
+require("includes.php");
 
-$start = starttime();
+$site = new site();
 
-echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
-<html>
-<head>
-<title>
-$sitename
-</title>
-<link rel=\"stylesheet\" type=\"text/css\" href=\"cgi-bin/master.css\">";
-genheader($_SERVER['REQUEST_URI']);
-echo "\r
-Hello and welcome!  I'm <a href=\"http://en.wikipedia.org/wiki/User:Matthewrbowker\" target=_blank>Matthew</a> and these are my tools!
+$site ->gen_opening();
+
+if (isset($_GET['test'])) $testserver = true;
+
+$bots = "<b>Bots</b>\n<ul>\n";
+$tools = "<b>Tools</b>\n<ul>\n";
+$test = "<b>Testing tools</b>\n<ul>\n";
+
+$data = parse_ini_file('vars/versions.ini',true);
+
+$keys = array_keys($data);
+
+
+for($i=0,$c=count($data);$i<$c;$i++) {
+	if ($data[$keys[$i]]['homepage'] == 'bot') {
+		$bots .= "<li><a href=\"" . $keys[$i] . "/\">" . $data[$keys[$i]]['name'] . "</a>";
+		if (isset($data[$keys[$i]]['homepagedescr']) && $data[$keys[$i]]['homepagedescr'] != '') $bots .= " - " . $data[$keys[$i]]['homepagedescr'];
+		$bots .= "</li>\n";
+	}
+	elseif ($data[$keys[$i]]['homepage'] == 'tool') {
+		$tools .= "<li><a href=\"" . $keys[$i] . "/\">" . $data[$keys[$i]]['name'] . "</a>";
+		if (isset($data[$keys[$i]]['homepagedescr']) && $data[$keys[$i]]['homepagedescr'] != '') $tools .= " - " . $data[$keys[$i]]['homepagedescr'];
+		$tools .= "</li>\n";
+	}
+	elseif ($data[$keys[$i]]['homepage'] == 'test') {
+		$test .= "<li><a href=\"" . $keys[$i] . "/\">" . $data[$keys[$i]]['name'] . "</a>";
+		if (isset($data[$keys[$i]]['homepagedescr']) && $data[$keys[$i]]['homepagedescr'] != '') $test .= " - " . $data[$keys[$i]]['homepagedescr'];
+		$test .= "</li>\n";
+	}
+	elseif ($data[$keys[$i]]['homepage'] == '' || !isset($data[$keys[$i]]['home'])) {
+		//Do nothing
+	}
+	else {
+		echo "<div id=\"sitenotice\"><div id=\"sn-content\">There was an error classifying \"" . $data[$keys[$i]]['name'] . ".\"</div></div><br />";
+	}
+}
+
+$bots .= "</ul>";
+$tools .= "</ul>";
+$test .= "</ul>";
+?>
+Hello and welcome!  I'm <a href="<?=$wpHref?>User:Matthewrbowker" target=_blank>Matthew</a> and these are my tools!
 <br>
 <br>
 I have the following tools avalible:
 <br>
 <br>
-<b>Bots</b>
-<ul>
-<li><a href=\"WikiWelcomer\">WikiWelcomer</a> -  Welcomes people onto IRC.</li>
-<li><a href=\"matthewrbot\">Matthewrbot</a> - Handles tasks related to Requested Articles
-</ul>
-<b>Tools</b>
-<ul>
-<li><a href=\"projectinfo\">Project Information tool</a> - shows information about different projects.
-<li><a href=\"serverinfo\">Toolserver Database Information tool</a> - allows you to check which server a specific language's database is mirrored on Toolserver.
-<li><a href=\"CNRD\">Cross-Namespace Redirects</a> - shows redirects outside of their namespace.
-<li><a href=\"logs\">Logs</a> - of my bots.
-</ul>
-If you need to contact me, please do so <a href=\"http://en.wikipedia.org/w/index.php?title=User_talk:Matthewrbowker&amp;action=edit&amp;section=new\" target=_blank>on my English Wikipedia talk page</a>.  If you'd like the source code for my tools, please visit <a href=\"https://github.com/Matthewrbowker/toolserver\" target=_blank>the GitHub repository I maintain</a>.\r";
-endtime($start);
-genfooter();
-echo "</body>
-</html>";
+
+<?=$bots;?>
+<?=$tools;?>
+<? if($testserver) echo $test; ?>
+If you need to contact me, please do so <a href="<?=$wpScriptHref ?>?title=User_talk:Matthewrbowker&amp;action=edit&amp;section=new" target=_blank>on my English Wikipedia talk page</a>.  If you'd like the source code for my tools, please visit <a href="https://github.com/Matthewrbowker/toolserver" target=_blank>the GitHub repository for my web-based tools</a> or the <a href="https://github.com/Matthewrbowker/toolserverBots" target=_blank>the GitHub repository for my bots</a>.  Or, you're always welcome to <a href="https://bugzilla.wikimedia.org/enter_bug.cgi?product=Tool%20Labs%20tools&component=Matthewrbowker's%20tools" target=_blank>file a bug</a>.
+<?
+//endtime($start);
+$site->gen_closing();
 ?>
