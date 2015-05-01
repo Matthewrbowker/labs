@@ -31,6 +31,7 @@ while (count($url) > $cur_blacklist) {
 	$line_num = 0;
 	$contents = file_get_contents($url_array[0]);
 	$contents_array = explode("\r",str_replace(array("\r","\n"),"\r",$contents));
+	var_dump($contents_array);
 	foreach ($contents_array as $value) {
 		$line_num++;
 		//$value_new = $value;

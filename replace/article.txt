@@ -1,0 +1,1353 @@
+{{Inuse|date=January 2014}}
+This is a '''list of law enforcement agencies''' in the state of [[Colorado]].
+
+== State agencies ==
+{|class="sortable wikitable" width=100%|
+|+ List of state agencies
+|-
+!scope="col"|Department<br />Name
+!scope="col"|Year founded
+!scope="col"|Number of<br />active personnel
+!scope="col"|Headquarters
+!scope="col"|Notes
+!scope="col"|Sources
+|-
+!scope="row"|[[Colorado Department of Corrections]]
+|1871
+|6,900<ref group="lower-alpha" name="cdc-note-personel>{{as of|September 2011}}</ref>
+|[[El Paso County, Colorado |El Paso County]], [[Colorado]]
+|
+|<ref name="cdc-nicic">{{cite web|url=http://nicic.gov/StateStats/?st=co |title=Corrections Statistics by State: Colorado |publisher=National Institute of Corrections |accessdate=10 January 2014}}</ref> <ref name="cdc-about">{{cite web |url=http://www.doc.state.co.us/about-corrections |title=About Corrections |publisher=Colorado Department of Corrections |accessdate=10 January 2014}}</ref> <ref name="cdc-ctcr">{{cite web |url=http://www.doc.state.co.us/facility/ctcf-colorado-territorial-correctional-facility |title=CTCF - Colorado Territorial Correctional Facility |publisher=Colorado Department of Corrections |accessdate=10 January 2014}}</ref>
+|-
+!scope="row"|[[Colorado Division of Youth Corrections]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Colorado Department of Public Safety]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Colorado State Patrol]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|Part of the Colorado Department of Public Safety
+|{{Unknown}}
+|-
+!scope="row"|[[Colorado Bureau of Investigation]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|Part of the Colorado Department of Public Safety
+|{{Unknown}}
+|-
+!scope="row"|[[Colorado National Guard]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|Includes the Air National Guard - Military Police and Security Forces
+|{{Unknown}}
+|-
+|}
+
+== County agencies {{cite web |url=https://web.archive.org/web/20100219190257/http://cbi.state.co.us/dr/cic2k8/agencylist.asp |title=Agency Listing |publisher=Colorado Bureau of Investigation |accessdate=10 January 2014}}==
+{|class="sortable wikitable" width=100%|
+|+ List of state agencies
+|-
+!scope="col"|Department
+Name
+!scope="col"|Year founded
+!scope="col"|Number of
+active personnel
+!scope="col"|Headquarters
+!scope="col"|Notes
+!scope="col"|Sources
+|-
+!scope="row"|[[Adams County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Alamosa County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Arapahoe County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Archuleta County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Baca County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Bent County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Boulder County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Broomfield County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Chaffee County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Cheyenne County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Clear Creek County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Conejos County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Costilla County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Crowley County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Custer County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Delta County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Denver Sheriff Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Dolores County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Douglas County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Eagle County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[El Paso County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[El Paso County District Attorney's Office - 4th Judicial District]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[El Paso County Coroner's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[El Paso County County Department of Human Services - Fraud & Investigations Unit]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[El Paso County Security Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Elbert County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Fremont County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Garfield County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Gilpin County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Grand County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Gunnison County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Hinsdale County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Huerfano County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Humane Society of the Pikes Peak Region - El Paso County]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Jackson County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Jefferson County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Kiowa County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Kit Carson County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[La Plata County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Lake County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Larimer County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Las Animas County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Lincoln County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Logan County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Mesa County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Mineral County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Montezuma County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Montrose County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Morgan County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Otero County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Ouray County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Park County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Phillips County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Pitkin County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Prowers County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Pueblo County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Rio Blanco County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Rio Grande County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Routt County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Saguache County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[San Juan County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[San Miguel County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Sedgwick County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Summit County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Teller County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Teller County District Attorney's Office - 4th Judicial District]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Washington County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Yuma County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Weld County Sheriff's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|}
+{{Col-begin}}
+{{Col-break}}
+*[[Adams County Sheriff's Office (Colorado)|Adams County Sheriff's Office]]
+*[[Alamosa County Sheriff's Office (Colorado)|Alamosa County Sheriff's Office]]
+*[[Arapahoe County Sheriff's Office (Colorado)|Arapahoe County Sheriff's Office]]
+*[[Archuleta County Sheriff's Office (Colorado)|Archuleta County Sheriff's Office]]
+*[[Baca County Sheriff's Office (Colorado)|Baca County Sheriff's Office]]
+*[[Bent County Sheriff's Office (Colorado)|Bent County Sheriff's Office]]
+*[[Boulder County Sheriff's Office (Colorado)|Boulder County Sheriff's Office]]
+*[[Broomfield County Sheriff's Office (Colorado)|Broomfield County Sheriff's Office]]
+*[[Chaffee County Sheriff's Office (Colorado)|Chaffee County Sheriff's Office]]
+*[[Cheyenne County Sheriff's Office (Colorado)|Cheyenne County Sheriff's Office]]
+*[[Clear Creek County Sheriff's Office (Colorado)|Clear Creek County Sheriff's Office]]
+*[[Conejos County Sheriff's Office (Colorado)|Conejos County Sheriff's Office]]
+*[[Costilla County Sheriff's Office (Colorado)|Costilla County Sheriff's Office]]
+*[[Crowley County Sheriff's Office (Colorado)|Crowley County Sheriff's Office]]
+*[[Custer County Sheriff's Office (Colorado)|Custer County Sheriff's Office]]
+*[[Delta County Sheriff's Office (Colorado)|Delta County Sheriff's Office]]
+*[[Denver Sheriff Department (Colorado)|Denver Sheriff Department]]
+*[[Dolores County Sheriff's Office (Colorado)|Dolores County Sheriff's Office]]
+*[[Douglas County Sheriff's Office (Colorado)|Douglas County Sheriff's Office]]
+*[[Eagle County Sheriff's Office (Colorado)|Eagle County Sheriff's Office]]
+*[[El Paso County Sheriff's Office (Colorado)|El Paso County Sheriff's Office]]
+*[[El Paso County District Attorney's Office - 4th Judicial District (Colorado)|El Paso County District Attorney's Office - 4th Judicial District]]
+*[[El Paso County Coroner's Office (Colorado)|El Paso County Coroner's Office]]
+*[[El Paso County Department of Human Services - Fraud & Investigations Unit (Colorado)|El Paso County County Department of Human Services - Fraud & Investigations Unit]]
+*[[El Paso County Security Department (Colorado)|El Paso County Security Department]]
+{{Col-break}}
+*[[Elbert County Sheriff's Office (Colorado)|Elbert County Sheriff's Office]]
+*[[Fremont County Sheriff's Office (Colorado)|Fremont County Sheriff's Office]]
+*[[Garfield County Sheriff's Office (Colorado)|Garfield County Sheriff's Office]]
+*[[Gilpin County Sheriff's Office (Colorado)|Gilpin County Sheriff's Office]]
+*[[Grand County Sheriff's Office (Colorado)|Grand County Sheriff's Office]]
+*[[Gunnison County Sheriff's Office (Colorado)|Gunnison County Sheriff's Office]]
+*[[Hinsdale County Sheriff's Office (Colorado)|Hinsdale County Sheriff's Office]]
+*[[Huerfano County Sheriff's Office (Colorado)|Huerfano County Sheriff's Office]]
+*[[Humane Society of the Pikes Peak Region - El Paso County (Colorado)|Humane Society of the Pikes Peak Region - El Paso County]]
+*[[Jackson County Sheriff's Office (Colorado)|Jackson County Sheriff's Office]]
+*[[Jefferson County Sheriff's Office (Colorado)|Jefferson County Sheriff's Office]]
+*[[Kiowa County Sheriff's Office (Colorado)|Kiowa County Sheriff's Office]]
+*[[Kit Carson County Sheriff's Office (Colorado)|Kit Carson County Sheriff's Office]]
+*[[La Plata County Sheriff's Office (Colorado)|La Plata County Sheriff's Office]]
+*[[Lake County Sheriff's Office (Colorado)|Lake County Sheriff's Office]]
+*[[Larimer County Sheriff's Office (Colorado)|Larimer County Sheriff's Office]]
+*[[Las Animas County Sheriff's Office (Colorado)|Las Animas County Sheriff's Office]]
+*[[Lincoln County Sheriff's Office (Colorado)|Lincoln County Sheriff's Office]]
+*[[Logan County Sheriff's Office (Colorado)|Logan County Sheriff's Office]]
+*[[Mesa County Sheriff's Office (Colorado)|Mesa County Sheriff's Office]]
+*[[Mineral County Sheriff's Office (Colorado)|Mineral County Sheriff's Office]]
+*[[Montezuma County Sheriff's Office (Colorado)|Montezuma County Sheriff's Office]]
+{{Col-break}}
+*[[Montrose County Sheriff's Office (Colorado)|Montrose County Sheriff's Office]]
+*[[Morgan County Sheriff's Office (Colorado)|Morgan County Sheriff's Office]]
+*[[Otero County Sheriff's Office (Colorado)|Otero County Sheriff's Office]]
+*[[Ouray County Sheriff's Office (Colorado)|Ouray County Sheriff's Office]]
+*[[Park County Sheriff's Office (Colorado)|Park County Sheriff's Office]]
+*[[Phillips County Sheriff's Office (Colorado)|Phillips County Sheriff's Office]]
+*[[Pitkin County Sheriff's Office (Colorado)|Pitkin County Sheriff's Office]]
+*[[Prowers County Sheriff's Office (Colorado)|Prowers County Sheriff's Office]]
+*[[Pueblo County Sheriff's Office (Colorado)|Pueblo County Sheriff's Office]]
+*[[Rio Blanco County Sheriff's Office (Colorado)|Rio Blanco County Sheriff's Office]]
+*[[Rio Grande County Sheriff's Office (Colorado)|Rio Grande County Sheriff's Office]]
+*[[Routt County Sheriff's Office (Colorado)|Routt County Sheriff's Office]]
+*[[Saguache County Sheriff's Office (Colorado)|Saguache County Sheriff's Office]]
+*[[San Juan County Sheriff's Office (Colorado)|San Juan County Sheriff's Office]]
+*[[San Miguel County Sheriff's Office (Colorado)|San Miguel County Sheriff's Office]]
+*[[Sedgwick County Sheriff's Office (Colorado)|Sedgwick County Sheriff's Office]]
+*[[Summit County Sheriff's Office (Colorado)|Summit County Sheriff's Office]]
+*[[Teller County Sheriff's Office (Colorado)|Teller County Sheriff's Office]]
+*[[Teller County District Attorney's Office - 4th Judicial District (Colorado)|Teller County District Attorney's Office - 4th Judicial District]]
+*[[Washington County Sheriff's Office (Colorado)|Washington County Sheriff's Office]]
+*[[Weld County Sheriff's Office (Colorado)|Weld County Sheriff's Office]]
+*[[Yuma County Sheriff's Office (Colorado)|Yuma County Sheriff's Office]]
+{{Col-end}}
+
+== City agencies  == 
+{|class="sortable wikitable" width=100%|
+|+ List of state agencies
+|-
+!scope="col"|Department
+Name
+!scope="col"|Year founded
+!scope="col"|Number of
+active personnel
+!scope="col"|Headquarters
+!scope="col"|Notes
+!scope="col"|Sources
+|-
+!scope="row"|[[Arvada Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Aspen Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Ault Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Aurora Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Avon Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Bayfield Marshal's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Black Hawk Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Berthoud Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Boulder Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Breckenridge Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Bow Mar Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Brighton Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Broomfield Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Brush Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Buena Vista Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Burlington Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Calhan Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Canon City Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Castle Rock Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Colorado Springs Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Cortez Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Craig Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Cripple Creek Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Columbine Valley Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Commerce City Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Dacono Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Delta Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Denver Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Durango Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Edgewater Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Englewood Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Erie Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Evans Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Federal Heights Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Firestone Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Fort Collins Police Services]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Fort Morgan Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Fountain Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Fowler Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Glenwood Springs Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Glendale Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Golden Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Greeley Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Green Mountain Falls Marshal's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Greenwood Village Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Gunnison Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Rocky Ford Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[La Junta Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Lakewood Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Lamar Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Littleton Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Lone Tree Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Longmont Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Louisville Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Loveland Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Mancos Marshal's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Northglenn Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[New Castle Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Olathe Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Parker Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Pueblo Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Ridgway Marshal's Office]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Rifle Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Salida Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Sheridan Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Silt Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Silverthorne Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Steamboat Springs Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Thornton Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Wheat Ridge Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Westminster Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Windsor Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Wray Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Yuma Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|}
+{{Col-begin}}
+{{Col-break}}
+*[[Arvada Police Department (Colorado)|Arvada Police Department]]
+*[[Aspen Police Department (Colorado)|Aspen Police Department]]
+*[[Ault Police Department (Colorado)|Ault Police Department]] 
+*[[Aurora Police Department (Colorado)|Aurora Police Department]]
+*[[Avon Police Department (Colorado)|Avon Police Department]]
+*[[Bayfield Marshal's Office (Colorado)|Bayfield Marshal's Office]]
+*[[Black Hawk Police Department (Colorado)|Black Hawk Police Department]]
+*[[Berthoud Police Department (Colorado)| Berthoud Police Department]]
+*[[Boulder Police Department (Colorado)|Boulder Police Department]]
+*[[Breckenridge Police Department (Colorado)|Breckenridge Police Department]]
+*[[Bow Mar Police Department (Colorado)| Bow Mar Police Department]]
+*[[Brighton Police Department (Colorado)|Brighton Police Department]]
+*[[Broomfield Police Department (Colorado)|Broomfield Police Department]]
+*[[Brush Police Department (Colorado)| Brush Police Department]]
+*[[Buena Vista Police Department (Colorado)| Buena Vista Police Department]]
+*[[Burlington Police Department (Colorado)| Burlington Police Department]]
+*[[Calhan Police Department (Colorado)|Calhan Police Department]]
+*[[Canon City Police Department (Colorado)|Canon City Police Department]]
+*[[Castle Rock Police Department (Colorado)|Castle Rock Police Department]]
+*[[Colorado Springs Police Department (Colorado)|Colorado Springs Police Department]]
+*[[Cortez Police Department (Colorado)|Cortez Police Department]]
+*[[Craig Police Department (Colorado)|Craig Police Department]]
+*[[Cripple Creek Police Department (Colorado)|Cripple Creek Police Department]]
+*[[Columbine Valley Police Department (Colorado)|Columbine Valley Police Department]]
+*[[Commerce City Police Department (Colorado)|Commerce City Police Department]]
+{{Col-break}}
+*[[Dacono Police Department (Colorado)|Dacono Police Department]]
+*[[Delta Police Department (Colorado)|Delta Police Department]]
+*[[Denver Police Department (Colorado)|Denver Police Department]]
+*[[Durango Police Department (Colorado)|Durango Police Department]]
+*[[Edgewater Police Department (Colorado)| Edgewater Police Department]]
+*[[Englewood Police Department (Colorado)|Englewood Police Department]]
+*[[Erie Police Department (Colorado)|Erie Police Department]]
+*[[Evans Police Department (Colorado)|Evans Police Department]]
+*[[Federal Heights Police Department (Colorado)|Federal Heights Police Department]]
+*[[Firestone Police Department (Colorado)|Firestone Police Department]]
+*[[Fort Collins Police Services (Colorado)|Fort Collins Police Services]]
+*[[Fort Morgan Police Department (Colorado)|Fort Morgan Police Department]]
+*[[Fountain Police Department (Colorado)|Fountain Police Department]]
+*[[Fowler Police Department (Colorado)|Fowler Police Department]]
+*[[Glenwood Springs Police Department (Colorado)|Glenwood Springs Police Department]]
+*[[Glendale Police Department (Colorado)|Glendale Police Department]]
+*[[Golden Police Department (Colorado)|Golden Police Department]]
+*[[Greeley Police Department (Colorado)|Greeley Police Department]]
+*[[Green Mountain Falls Marshal's Office (Colorado)|Green Mountain Falls Marshal's Office]]
+*[[Greenwood Village Police Department (Colorado)|Greenwood Village Police Department]]
+*[[Gunnison Police Department (Colorado)|Gunnison Police Department]]
+*[[Rocky Ford Police Department (Colorado)|Rocky Ford Police Department]]
+*[[La Junta Police Department (Colorado)|La Junta Police Department]]
+*[[Lakewood Police Department (Colorado)|Lakewood Police Department]]
+{{Col-break}}
+*[[Lamar Police Department (Colorado)|Lamar Police Department]]
+*[[Littleton Police Department (Colorado)|Littleton Police Department]]
+*[[Lone Tree Police Department (Colorado)|Lone Tree Police Department]]
+*[[Longmont Police Department (Colorado)|Longmont Police Department]]
+*[[Louisville Police Department (Colorado)|Louisville Police Department]]
+*[[Loveland Police Department (Colorado)|Loveland Police Department]]
+*[[Mancos Marshal's Office (Colorado)|Mancos Marshal's Office]]
+*[[Northglenn Police Department (Colorado)|Northglenn Police Department]]
+*[[New Castle Police Department (Colorado)|New Castle Police Department]]
+*[[Olathe Police Department (Colorado) |Olathe Police Department]]
+*[[Parker Police Department (Colorado)|Parker Police Department]]
+*[[Pueblo Police Department (Colorado)|Pueblo Police Department]]
+*[[Ridgway Marshal's Office (Colorado)|Ridgway Marshal's Office]]
+*[[Rifle Police Department (Colorado)|Rifle Police Department]]
+*[[Salida Police Department (Colorado)|Salida Police Department]]
+*[[Sheridan Police Department (Colorado)|Sheridan Police Department]]
+*[[Silt Police Department (Colorado)|Silt Police Department]]
+*[[Silverthorne Police Department (Colorado)|Silverthorne Police Department]]
+*[[Steamboat Springs Police Department (Colorado)|Steamboat Springs Police Department]]
+*[[Thornton Police Department (Colorado)|Thornton Police Department]]
+*[[Wheat Ridge Police Department (Colorado)|Wheat Ridge Police Department]]
+*[[Westminster Police Department (Colorado)|Westminster Police Department]]
+*[[Windsor Police Department (Colorado)|Windsor Police Department]]
+*[[Wray Police Department (Colorado)|Wray Police Department]]
+*[[Yuma Police Department (Colorado)|Yuma Police Department]]
+{{Col-end}}
+
+== College and university agencies  ==
+{|class="sortable wikitable" width=100%|
+|+ List of state agencies
+|-
+!scope="col"|Department
+Name
+!scope="col"|Year founded
+!scope="col"|Number of
+active personnel
+!scope="col"|Headquarters
+!scope="col"|Notes
+!scope="col"|Sources
+|-
+!scope="row"|[[Adams State College Public Safety Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Arapahoe Community College Public Safety Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Auraria Campus Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Colorado State University Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Fort Lewis College Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[Pikes Peak Community College Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[University of Colorado Denver Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[University of Colorado Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[University of Colorado at Colorado Springs Department of Public Safety]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|-
+!scope="row"|[[University of Northern Colorado Police Department]]
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|{{Unknown}}
+|}
+{{Col-begin}}
+{{Col-break}}
+*[[Adams State College Public Safety Department]]
+*[[Arapahoe Community College Public Safety Department]]
+*[[Auraria Campus Police Department]]
+{{Col-break}}
+*[[Colorado State University Police Department]]
+*[[Fort Lewis College Police Department]]
+*[[Pikes Peak Community College Police Department]]
+{{Col-break}}
+*[[University of Colorado Denver Police Department]]
+*[[University of Colorado Police Department]]
+* [[University of Colorado at Colorado Springs Department of Public Safety]]
+*[[University of Northern Colorado Police Department]]
+{{Col-end}}
+
+==Notes==
+{{reflist |group="lower-alpha"}}
+
+
+==References==
+{{Reflist|2}}
+
+{{-}}
+{{LawByState}}
+{{Colorado}}
+
+[[Category:Lists of United States law enforcement agencies by state|Colorado]]
+[[Category:Colorado-related lists|Law enforcement agencies]]
+[[Category:Law enforcement agencies of Colorado]]
