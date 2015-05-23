@@ -73,7 +73,13 @@ class site {
 
 	}
 	
+	function gen_opening_boostrap() {
+		echo "<HTML>\r<HEAD>\r</HEAD>\r<BODY>";
+	}
+	
 	function gen_opening() {
+		$this -> gen_opening_boostrap();
+		return;
 		?>
 		<!DOCTYPE html>
 		<html>
@@ -136,8 +142,16 @@ class site {
 			<?
 	}
 	
+	function gen_closing_bootstrap() {
+		// Nothing doing
+		echo "</BODY>\r</HTML>";
+	}
+	
 	function gen_closing() {
 		//generate the closing HTML
+		
+		$this -> gen_closing_bootstrap();
+		return;
 		
 		$time = microtime();
 		$time = explode(' ', $time);
