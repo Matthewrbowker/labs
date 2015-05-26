@@ -103,7 +103,7 @@ class site {
 		</script> 
 		</head>
 		
-		<body{(isset($this->onload) && $this->onload != '') ? " " . $this->onload : ""}>
+		<body>
 		<div id="fullbody">
 		<div id="heading">
 		<h1>{$sitename}</h1>
