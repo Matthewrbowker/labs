@@ -47,7 +47,7 @@ Changelog - <?=$name?>
 </tr>
 </table>
 <H3>Changelog</H3>
-<?
+<?php
 
 while (0 <= $totnum) {
 $changes = $data[$totnum]['changes'];
