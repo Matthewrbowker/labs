@@ -1,4 +1,4 @@
-<?
+<?php
 
 // Wrapper for generating the site content
 
