@@ -42,4 +42,4 @@ An error has occured!  Data on the error is below:
 
 Feel free to contact me <a href="http://en.wikipedia.org/w/index.php?title=User_talk:Matthewrbowker&amp;action=edit&amp;section=new">on my talk page</a> to report this error.
 
-<? $site -> gen_closing(); ?>
+<?php $site -> gen_closing(); ?>

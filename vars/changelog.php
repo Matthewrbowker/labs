@@ -67,6 +67,6 @@ $totnum = $totnum-1;
 <center>
 <a href='#' onclick='javascript:self.close()'>X&nbsp;&nbsp;&nbsp;Close this window</a>
 </center>
-<? endtime($start);
+<?php endtime($start);
 
 ?>

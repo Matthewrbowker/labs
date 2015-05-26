@@ -61,7 +61,7 @@ I have the following tools avalible:
 <li><a href="projectinfo">Project Information tool</a> - shows information about different projects.</li>
 <li><a href="serverinfo">Toolserver Database Information tool</a> - allows you to check which server a specific language's database is mirrored on Toolserver.</li>
 <li><a href="CNRD">Cross-Namespace Redirects</a> - shows redirects outside of their namespace. </li>
-<? if($testserver): //For testing tools ?>
+<?php if($testserver): //For testing tools ?>
 </ul>
 <b>Test tools</b>
 <ul>
@@ -76,7 +76,7 @@ I have the following tools avalible:
 <li><a href="social">Share an article</a></li>
 <li><a href="testing">Test tools</a></li>
 <li><a href="articlerequest">Article Request</a> - Allows people to request an article.</li>
-<? endif; ?>
+<?php endif; ?>
 </ul>
 If you need to contact me, please do so <a href="<?=$wpScriptHref ?>?title=User_talk:Matthewrbowker&amp;action=edit&amp;section=new" target=_blank>on my English Wikipedia talk page</a>.  If you'd like the source code for my tools, please visit <a href="https://github.com/Matthewrbowker/toolserver" target=_blank>the GitHub repository for my web-based tools</a> or the <a href="https://github.com/Matthewrbowker/toolserverBots" target=_blank>the GitHub repository for my bots</a>.
 <?

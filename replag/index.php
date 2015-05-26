@@ -42,4 +42,4 @@ if (isset($_GET['server'])) {
 <input type="submit" value="Check">
 </form>
 
-<? $site -> gen_closing(); ?>
+<?php $site -> gen_closing(); ?>

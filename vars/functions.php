@@ -221,7 +221,7 @@ function new_genheader() {
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title><?=$title?>
 </title>
-<link rel="stylesheet" type="text/css" href="<?=$csurl ?>?color=<? echo $color; ?>" />
+<link rel="stylesheet" type="text/css" href="<?=$csurl ?>?color=<?php echo $color; ?>" />
 <script>
 <!--
 function wopen(url, name, w, h, s)
@@ -244,9 +244,9 @@ h += 96;
 <div id="fullbody">
 <div id="heading">
 <h1><?=$home ? $sitename : $name; ?></h1>
-<? if (!$home) : ?>
+<?php if (!$home) : ?>
 <h2><?=$sitename; ?></h2>
-<? endif; ?>
+<?php endif; ?>
 </div>
 <table id="navi">
 <tr>
@@ -258,21 +258,21 @@ h += 96;
 <a href="<?=$changelogurl; ?>" target="popup"
  onClick="wopen('<?=$changelogurl; ?>', 'popup', 640, 480, 'yes'); return false;">Change Log</a>
 </td>
-<? if (!$home) : ?>
+<?php if (!$home) : ?>
 <td style="width:34%;">
 <?=$hometext;?>
 </td>
-<? endif; ?>
+<?php endif; ?>
 </tr>
 </table>
-<? sql_error_check() ?>
-<? if($sn_on == true) : ?>
+<?php sql_error_check() ?>
+<?php if($sn_on == true) : ?>
 <div id="sitenotice">
 <div id="sn-content">
 <b>Note:</b> <?=$sitenotice; ?>
 </div>
 </div>
-<? endif; ?>
+<?php endif; ?>
     <?*/
 	echo "This function is depreciated!  Please convert this page to classes.";
 }

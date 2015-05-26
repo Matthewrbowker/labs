@@ -13,4 +13,4 @@ This tool checks if an image is a "Featured Picture" on various wikis.
 <input type="submit" value="Check file" />
 </form>
 
-<? $site -> gen_closing(); ?>
+<?php $site -> gen_closing(); ?>

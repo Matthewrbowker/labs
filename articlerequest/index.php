@@ -114,4 +114,4 @@ Your on-wiki username (if applicable) :
 </tr>
 </table>
 </div>
-<? $site -> gen_closing(); ?>
+<?php $site -> gen_closing(); ?>

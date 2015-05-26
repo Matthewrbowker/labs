@@ -61,4 +61,4 @@ Thanks!</textarea>
 </tr>
 </table>
 
-<? $site -> gen_closing(); ?>
+<?php $site -> gen_closing(); ?>

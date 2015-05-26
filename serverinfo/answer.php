@@ -25,4 +25,4 @@ $site -> gen_opening();
 <div style="width:100%; text-align:center;"><H2>
 <?=mysql_num_rows($result) > 0 ? "The database " . mysql_result($result,0,'dbname') . " is located on server " . mysql_result($result,0,'server') . "." : "That project ($lang, $project) is not avalable."?>
 </H2></div>
-<? $site -> gen_closing(); ?>
+<?php $site -> gen_closing(); ?>

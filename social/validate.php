@@ -17,7 +17,7 @@ $site -> gen_opening();
 
 ?>
 
-<? if (!$pass) error("The article field cannot be blank."); ?>
+<?php if (!$pass) error("The article field cannot be blank."); ?>
 
 <form action="validate.php" method="get">
 <label for="article">Please enter the article you'd like to share: </label><input type="text" name="article" value="<?=$_GET['article'] ?>" />
