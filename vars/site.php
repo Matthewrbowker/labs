@@ -125,7 +125,7 @@ ENDL;
 		</td>
 ENDL;
 		if (!$this->home) {
-		echo "<td style='width:34%;''>
+		echo "<td style='width:34%;'>
 		{$this->hometext}
 		</td>";
         }
