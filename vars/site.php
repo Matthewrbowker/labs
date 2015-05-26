@@ -74,14 +74,17 @@ class site {
 	}
 	
 	function gen_opening() {
-		?>
+		$sitename = $this->home ? $this->ts_sitename : $this->name;
+		$width = $this->home ? 50 : 33;
+		
+		echo <<<ENDL
 		<!DOCTYPE html>
 		<html>
 		<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title><?=$this->title?>
+		<title>{$this->title}
 		</title>
-		<link rel="stylesheet" type="text/css" href="<?=$this->csurl ?>?color=<? echo $this->color; ?>" />
+		<link rel="stylesheet" type="text/css" href="{$this->csurl}?color={$this->color}" />
 		<script>
 		<!--
 		function wopen(url, name, w, h, s)
@@ -100,44 +103,55 @@ class site {
 		</script> 
 		</head>
 		
-		<body<?= (isset($this->onload) && $this->onload != '') ? " " . $this->onload : "" ?>>
+		<body{(isset($this->onload) && $this->onload != '') ? " " . $this->onload : ""}>
 		<div id="fullbody">
 		<div id="heading">
-		<h1><?=$this->home ? $this->ts_sitename : $this->name; ?></h1>
-		<? if (!$this->home) : ?>
-		<h2><?=$this->ts_sitename; ?></h2>
-		<? endif; ?>
+		<h1>{$sitename}</h1>
+ENDL;
+		 if (!$this->home) {
+			echo "<h2> {$this->ts_sitename }</h2>";
+		}
+        echo <<<ENDL
 		</div>
 		<table id="navi">
 		<tr>
-		<td style="width:<?=$this->home ? '50' : '33'?>%;">
-		<a href="<?=$this->abouturl; ?>" target="popup"
-		 onClick="wopen('<?=$this->abouturl; ?>', 'popup', 400, 300, 'no'); return false;"><?=$this->abouttext; ?></a>
+		<td style="width:{$width}%;">
+		<a href="{$this->abouturl}" target="popup"
+		 onClick="wopen('{$this->abouturl }', 'popup', 400, 300, 'no'); return false;">{$this->abouttext }</a>
 		</td>
-		<td style="width:<?=$this->home ? '50' : '33'?>%;">
-		<a href="<?=$this->changelogurl; ?>" target="popup"
-		 onClick="wopen('<?=$this->changelogurl; ?>', 'popup', 640, 480, 'yes'); return false;">Change Log</a>
+		<td style="width:{$width}%;">
+		<a href="{$this->changelogurl }" target="popup"
+		 onClick="wopen('{$this->changelogurl }', 'popup', 640, 480, 'yes'); return false;">Change Log</a>
 		</td>
-		<? if (!$this->home) : ?>
-		<td style="width:34%;">
-		<?=$this->hometext;?>
-		</td>
-		<? endif; ?>
+ENDL;
+		if (!$this->home) {
+		echo "<td style='width:34%;''>
+		{$this->hometext}
+		</td>";
+        }
+
+        echo <<<ENDL
 		</tr>
 		</table>
-		<? sql_error_check() ?>
-		<? if($this->ts_sn_on) : ?>
-		<div id="sitenotice">
-		<div id="sn-content">
-		<b>Note:</b> <?=$this->ts_sitenotice; ?>
+ENDL;
+		sql_error_check();
+		if($this->ts_sn_on) {
+        echo "<div id='sitenotice'>
+		<div id='sn-content'>
+		<b>Note:</b> {$this->ts_sitenotice }
 		</div>
-		</div>
-		<? endif; ?>
-			<?
+		</div>";
+        }
 	}
 	
 	function gen_closing() {
 		//generate the closing HTML
+
+		$versions = "Core version {$this->versions['root']['version']}";
+
+		if($this->home != 'true') $versions = "| Tool version {$this->version}";
+
+		$relative = $this->home ? "" : "../";
 		
 		$time = microtime();
 		$time = explode(' ', $time);
@@ -145,25 +159,24 @@ class site {
 		$finish = $time;
 		$total_time = round(($finish - $this->starttime), 4);
 		
-		?>
+		echo <<<ENDL
         <br>
         <br>
-        <div class="vertime">Core version <?=$this->versions['root']['version']?><? if($this->home != 'true'): ?>
-        | Tool version <?=$this->version?>
-        <? endif; ?></div>
+        <div class="vertime">{$versions}
+        </div>
         <div class="vertime">Page generated in <?=$total_time?> seconds.</div>
         <div id="footer">
-        <a href='http://validator.w3.org/check?uri=referer' target="_blank" ><img src='<?=$this->home ? "" : "../"?>images/valid-html5.png' alt='Valid HTML 5' style="border:0;width:88px;height:31px"></a>
-        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img style="border:0;width:88px;height:31px" src="<?=$this->home ? "" : "../"?>images/valid-css.gif" alt="Valid CSS!"></a>
-        <a href='http://toolserver.org/' target=_blank><img src='<?=$this->home ? "" : "../"?>images/wikimedia-toolserver-button.png' alt='Powered by Wikimedia Toolserver' style="border:0;width:88px;height:31px"></a>
-        <a href="http://www.anybrowser.org/campaign/" target="_blank"><img src="<?=$this->home ? "" : "../"?>images/anybrowser.jpg" style="border:0;width:88px;height:31px" alt="Viewable With Any Browser"></a>
-        <a href="http://espn.go.com" target=_blank><img src="<?=$this->home ? "" : "../"?>images/espn-api-black_150.png" alt="Powered by the ESPN api" style="border:0;width:88px;height:31px"></a>
+        <a href='http://validator.w3.org/check?uri=referer' target="_blank" ><img src='{$relative}images/valid-html5.png' alt='Valid HTML 5' style="border:0;width:88px;height:31px"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img style="border:0;width:88px;height:31px" src="{$relative}images/valid-css.gif" alt="Valid CSS!"></a>
+        <a href='http://toolserver.org/' target=_blank><img src='{$relative}images/wikimedia-toolserver-button.png' alt='Powered by Wikimedia Toolserver' style="border:0;width:88px;height:31px"></a>
+        <a href="http://www.anybrowser.org/campaign/" target="_blank"><img src="{$relative}images/anybrowser.jpg" style="border:0;width:88px;height:31px" alt="Viewable With Any Browser"></a>
+        <a href="http://espn.go.com" target=_blank><img src="{$relative}images/espn-api-black_150.png" alt="Powered by the ESPN api" style="border:0;width:88px;height:31px"></a>
         
         </div>
         </div>
         </body>
         </html>
-<?
+ENDL;
 	}
 	
 	function __destruct() {
