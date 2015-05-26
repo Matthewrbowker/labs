@@ -147,9 +147,9 @@ ENDL;
 	function gen_closing() {
 		//generate the closing HTML
 
-		$versions = "Core version {$this->versions['root']['version']}";
+		$ver = "Core version {$this->versions['root']['version']}";
 
-		if($this->home != 'true') $versions = "| Tool version {$this->version}";
+		if($this->home != "true") {$ver .=  " | Tool version {$this->version}";}
 
 		$relative = $this->home ? "" : "../";
 		
@@ -162,15 +162,15 @@ ENDL;
 		echo <<<ENDL
         <br>
         <br>
-        <div class="vertime">{$versions}
+        <div class="vertime">{$ver}
         </div>
-        <div class="vertime">Page generated in <?=$total_time?> seconds.</div>
+        <div class="vertime">Page generated in {$total_time} seconds.</div>
         <div id="footer">
         <a href='http://validator.w3.org/check?uri=referer' target="_blank" ><img src='{$relative}images/valid-html5.png' alt='Valid HTML 5' style="border:0;width:88px;height:31px"></a>
         <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img style="border:0;width:88px;height:31px" src="{$relative}images/valid-css.gif" alt="Valid CSS!"></a>
-        <a href='http://toolserver.org/' target=_blank><img src='{$relative}images/wikimedia-toolserver-button.png' alt='Powered by Wikimedia Toolserver' style="border:0;width:88px;height:31px"></a>
+        <!-- a href='http://toolserver.org/' target=_blank><img src='{$relative}images/wikimedia-toolserver-button.png' alt='Powered by Wikimedia Toolserver' style="border:0;width:88px;height:31px"></a -->
         <a href="http://www.anybrowser.org/campaign/" target="_blank"><img src="{$relative}images/anybrowser.jpg" style="border:0;width:88px;height:31px" alt="Viewable With Any Browser"></a>
-        <a href="http://espn.go.com" target=_blank><img src="{$relative}images/espn-api-black_150.png" alt="Powered by the ESPN api" style="border:0;width:88px;height:31px"></a>
+        <!-- a href="http://espn.go.com" target=_blank><img src="{$relative}images/espn-api-black_150.png" alt="Powered by the ESPN api" style="border:0;width:88px;height:31px"></a -->
         
         </div>
         </div>
