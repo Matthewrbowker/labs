@@ -3,9 +3,11 @@ require('../includes.php');
 
 $site = new site();
 
-$db = mysqli_connect($wpServer, $sqlUser, $sqlPw);
+$db = mysqli_connect($wpServer, $sqlUser, $sqlPw, $wpDb);
  
-mysqli_select_db($wpDb, $db);
+//mysqli_select_db($db, $wpDb);
+
+sql_error_ckeck($db);
 
 $query="SELECT page_title, rd_namespace, rd_title
 FROM " . $wpDbTablePrefix . "page p
@@ -63,9 +65,11 @@ $ns=array(
 
 $returning = false;
 
-$result=mysqli_query($query, $db);
+$result=mysqli_query($db, $query);
 
-$num=mysqli_numrows($result);
+sql_error_check($db);
+
+$num=mysqli_stmt_num_rows($result);
 
 $site -> gen_opening();
 

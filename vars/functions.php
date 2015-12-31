@@ -14,14 +14,25 @@ return $string;
 
 }
 
-function sql_error_check() {
-	if (mysqli_error() != '') {
+function sql_error_check(mysqli $db) {
+	$error = false;
+	if (mysqli_error($db) != '') {
 		echo "<div id=\"sitenotice\">
 		<div id=\"sn-content\">
-		<b>ERROR:</b> " . mysqli_error() . "
+		<b>ERROR:</b> " . mysqli_error($db) . "
 		</div>
 		</div>";
+		$error=true;
 	}
+	if (mysqli_connect_error($db) != '') {
+		echo "<div id=\"sitenotice\">
+		<div id=\"sn-content\">
+		<b>ERROR:</b> " . mysqli_connect_error($db) . "
+		</div>
+		</div>";
+		$error=true;
+	}
+	if ($error) die();
 }
 
 function genheader() {
