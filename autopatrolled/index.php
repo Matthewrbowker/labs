@@ -7,10 +7,10 @@ $site -> gen_opening();
 
 /*$ts_pw = posix_getpwuid(posix_getuid());
 $ts_mycnf = parse_ini_file($ts_pw['dir'] . "/.my.cnf");
-$db = mysql_connect('enwiki-p.rrdb.toolserver.org', $ts_mycnf['user'], $ts_mycnf['password']);
+$db = mysqli_connect('enwiki-p.rrdb.toolserver.org', $ts_mycnf['user'], $ts_mycnf['password']);
 unset($ts_mycnf, $ts_pw);
  
-mysql_select_db('enwiki_p', $db);*/
+mysqli_select_db('enwiki_p', $db);*/
 
 $query = "select r1.rev_user_text, count(*)
   from page join revision as r1 on page_id=r1.rev_page
@@ -28,7 +28,7 @@ having count(*) > 50 and exists( select *
                                        and r2.rev_timestamp > '20091231235959')
 order by count(*) limit 0, 30";
 
-// $result = mysql_query($query);
+// $result = mysqli_query($query);
 
 echo $query;
 

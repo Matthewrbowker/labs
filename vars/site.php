@@ -74,7 +74,28 @@ class site {
 	}
 	
 	function gen_opening_boostrap() {
-		echo "<HTML>\r<HEAD>\r</HEAD>\r<BODY>";
+		echo <<< ENDL
+<HTML>
+<HEAD>
+<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
+<title>{$this->title}</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+crossorigin="anonymous">
+
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      </style>
+</HEAD>
+<BODY>
+
+<div class="container-fluid">
+<div class="col-md-1">&nbsp;</div>
+<div class="col-md-10">
+ENDL;
 	}
 	
 	function gen_opening() {
@@ -143,8 +164,25 @@ class site {
 	}
 	
 	function gen_closing_bootstrap() {
-		// Nothing doing
-		echo "</BODY>\r</HTML>";
+		echo <<<ENDL
+		 <div class="footer">
+        <p style="text-align:right"><small>Wikimedia Labs tools &middot; Written by Matthewrbowker &middot; Core Version {$this->versions['root']['version']} &middot; Tool Version {$this->version}<br />
+          <a href="http://localhost/~wiki/index.php?title=Article_request%2Fconfig%2Finterface" target=_blank>Edit this page</a> &middot; <a href="http://localhost/~wiki/index.php?title=Article_request%2Fconfig%2Finterface%2Fall" target=_blank>Edit this tool</a> &middot; <a href="about.php"\>About this tool</a> </small>
+        </p>
+      </div>
+    </div>
+
+    </div> <!-- /col-md-10 -->
+    <div class="col-md-1">&nbsp;</div>
+
+    </div> <!-- /container -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+ integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+ crossorigin="anonymous\></script>
+</BODY>
+</HTML>";
+
+ENDL;
 	}
 	
 	function gen_closing() {

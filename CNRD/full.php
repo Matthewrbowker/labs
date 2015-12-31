@@ -3,11 +3,11 @@ require('../includes.php');
 
 $site = new site();
 
-$db = mysql_connect($wpServer, $sqlUser, $sqlPw);
+$db = mysqli_connect($wpServer, $sqlUser, $sqlPw);
  
-mysql_select_db($wpDb, $db);
+mysqli_select_db($wpDb, $db);
  
-mysql_select_db('enwiki_p', $db);
+mysqli_select_db('enwiki_p', $db);
 
 $query="SELECT page_title, rd_namespace, rd_title
 FROM " . $wpDbTablePrefix . "page p
@@ -45,9 +45,9 @@ $ns=array(
 '444'=>'Institution',
 '445'=>'Institution talk');
 
-$result=mysql_query($query, $db);
+$result=mysqli_query($query, $db);
 
-$num=mysql_numrows($result);
+$num=mysqli_numrows($result);
 
 $site -> gen_opening();
 
@@ -67,9 +67,9 @@ echo "<TABLE style=\"text-align:center;width:100%;border-collapse:collapse;\">
 
 while ($tot < $num) {
 
-$from = mysql_result($result,$tot,"page_title");
-$to_ns = mysql_result($result,$tot,"rd_namespace");
-$to = mysql_result($result,$tot,"rd_title");
+$from = mysqli_result($result,$tot,"page_title");
+$to_ns = mysqli_result($result,$tot,"rd_namespace");
+$to = mysqli_result($result,$tot,"rd_title");
 
 $to_ns_rev=$ns[$to_ns];
 

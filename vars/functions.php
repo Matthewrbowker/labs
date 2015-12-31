@@ -2,7 +2,7 @@
 
 function sanitize($string) {
 $string = strip_tags($string);
-$string = mysql_real_escape_string($string);
+$string = mysqli_real_escape_string($string);
 return $string;
 }
 
@@ -15,10 +15,10 @@ return $string;
 }
 
 function sql_error_check() {
-	if (mysql_error() != '') {
+	if (mysqli_error() != '') {
 		echo "<div id=\"sitenotice\">
 		<div id=\"sn-content\">
-		<b>ERROR:</b> " . mysql_error() . "
+		<b>ERROR:</b> " . mysqli_error() . "
 		</div>
 		</div>";
 	}
