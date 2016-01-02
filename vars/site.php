@@ -99,9 +99,7 @@ ENDL;
 	}
 
 	function gen_opening_old() {
-		$this -> gen_opening_boostrap();
-		return;
-		?>
+	echo <<< ENDL
 		<!DOCTYPE html>
 		<html>
 		<head>
