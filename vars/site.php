@@ -160,6 +160,7 @@ ENDL;
 		<? endif; ?>
 			<?
 	}
+ENDL;
 	
 	function gen_closing() {
 		echo <<<ENDL
@@ -184,10 +185,6 @@ ENDL;
 	}
 	
 	function gen_closing_old() {
-		//generate the closing HTML
-		
-		$this -> gen_closing_bootstrap();
-		return;
 		
 		$time = microtime();
 		$time = explode(' ', $time);
