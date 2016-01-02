@@ -3,9 +3,11 @@ require('../includes.php');
 
 $site = new site();
 
-$db = mysql_connect($wpServer, $sqlUser, $sqlPw);
+$db = mysqli_connect($wpServer, $sqlUser, $sqlPw, $wpDb);
  
-mysql_select_db($wpDb, $db);
+//mysqli_select_db($db, $wpDb);
+
+sql_error_check($db);
 
 $query="SELECT page_title, rd_namespace, rd_title
 FROM " . $wpDbTablePrefix . "page p
@@ -63,9 +65,11 @@ $ns=array(
 
 $returning = false;
 
-$result=mysql_query($query, $db);
+$result=mysqli_query($db, $query);
 
-$num=mysql_numrows($result);
+sql_error_check($db);
+
+$num=mysqli_stmt_num_rows($result);
 
 $site -> gen_opening();
 
@@ -85,9 +89,9 @@ echo "<TABLE style=\"text-align:center;width:100%;border-collapse:collapse;\">
 ";
 
 while ($tot < $num) {
-$from = mysql_result($result,$tot,"page_title");
-$to_ns = mysql_result($result,$tot,"rd_namespace");
-$to = mysql_result($result,$tot,"rd_title");
+$from = mysqli_result($result,$tot,"page_title");
+$to_ns = mysqli_result($result,$tot,"rd_namespace");
+$to = mysqli_result($result,$tot,"rd_title");
 if (!in_array($to, $ignore)) {
 
 $to_ns_rev=$ns[$to_ns];

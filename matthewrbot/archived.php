@@ -5,12 +5,12 @@ $start = starttime();
 
 $ts_pw = posix_getpwuid(posix_getuid());
 $ts_mycnf = parse_ini_file($ts_pw['dir'] . "/.my.cnf");
-$db = mysql_connect('sql-user-m.toolserver.org', $ts_mycnf['user'], $ts_mycnf['password']);
+$db = mysqli_connect('sql-user-m.toolserver.org', $ts_mycnf['user'], $ts_mycnf['password']);
 unset($ts_mycnf, $ts_pw);
 
-mysql_select_db('u_matthewrbowker_articlerequest', $db);
+mysqli_select_db('u_matthewrbowker_articlerequest', $db);
 
-//$result = mysql_query("SELECT * FROM `archived` WHERE 1");
+//$result = mysqli_query("SELECT * FROM `archived` WHERE 1");
 
 genheader();
 

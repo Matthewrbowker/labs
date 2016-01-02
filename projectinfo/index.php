@@ -3,14 +3,14 @@ require('../includes.php');
 
 $site = new site();
 
-$db = mysql_connect($tsServer, $sqlUser, $sqlPw);
+$db = mysqli_connect($tsServer, $sqlUser, $sqlPw);
 
-mysql_select_db($tsDb, $db) or die('Unable to contact database');
+mysqli_select_db($tsDb, $db) or die('Unable to contact database');
 
 $query_lang="SELECT `lang`,`english_name` FROM `language` WHERE `english_name`!=-1 ORDER BY `english_name` ASC";
-$result_lang=mysql_query($query_lang);
+$result_lang=mysqli_query($query_lang);
 
-$num_lang=mysql_numrows($result_lang);
+$num_lang=mysqli_numrows($result_lang);
 
 $tot_lang=0;
 
@@ -35,8 +35,8 @@ Language:
 
 while ($tot_lang < $num_lang)
 {
-$langcode=mysql_result($result_lang,$tot_lang,"lang");
-$langname=mysql_result($result_lang,$tot_lang,"english_name");
+$langcode=mysqli_result($result_lang,$tot_lang,"lang");
+$langname=mysqli_result($result_lang,$tot_lang,"english_name");
 
 echo "<option value='$langcode'>$langname</option>\r";
 
@@ -51,17 +51,17 @@ Project:
 
 $query_proj="SELECT DISTINCT `family` FROM `wiki` WHERE `family` LIKE 'wiki%'";
 
-$result_proj=mysql_query($query_proj);
+$result_proj=mysqli_query($query_proj);
 
-$num_proj=mysql_numrows($result_proj);
+$num_proj=mysqli_numrows($result_proj);
 
-mysql_close();
+mysqli_close();
 
 $tot_proj=0;
 
 while ($tot_proj < $num_proj)
 {
-$projcode=mysql_result($result_proj,$tot_proj,"family");
+$projcode=mysqli_result($result_proj,$tot_proj,"family");
 $projname=ucwords($projcode); 
 
 echo "<option value='$projcode'>$projname</option>\r";

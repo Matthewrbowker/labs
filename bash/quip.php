@@ -5,14 +5,14 @@ $site = new site();
 
 $id=$_GET['id'];
 
-$db = mysql_connect($tsServer, $sqlUser, $sqlPw);
+$db = mysqli_connect($tsServer, $sqlUser, $sqlPw);
 
-mysql_select_db($tsDb, $db) or die('Unable to contact database');
+mysqli_select_db($tsDb, $db) or die('Unable to contact database');
 
 if ($id='rand') {
 $countquery="SELECT COUNT( * ) FROM `quips` WHERE 1;";
-$countres=mysql_query($countquery);
-//$count=mysql_result($countres,0,0);
+$countres=mysqli_query($countquery);
+//$count=mysqli_result($countres,0,0);
 
 $count='2';
 $count=intval($count);
@@ -25,9 +25,9 @@ else {
 $query="SELECT `quip` from `quips` where `id`=$id LIMIT 1;";
 }
 
-$result = mysql_query($query);
+$result = mysqli_query($query);
 
-$quip = mysql_result($result,0,"quip");
+$quip = mysqli_result($result,0,"quip");
 
 $quip = str_replace('//',"<br>\r",$quip);
 

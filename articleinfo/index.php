@@ -3,15 +3,15 @@ require('../includes.php');
 
 $site = new site();
 
-$db = mysql_connect($tsServer, $sqlUser, $sqlPw);
+$db = mysqli_connect($tsServer, $sqlUser, $sqlPw);
 
-mysql_select_db($tsDb, $db) or die('Unable to contact database');
+mysqli_select_db($tsDb, $db) or die('Unable to contact database');
 
 $query_ns="SELECT `ns_id`,`ns_name` FROM `namespace` WHERE `dbname`='enwiki_p' AND `ns_id`>=0 AND `ns_name`!='Thread' AND `ns_name`!='Thread talk' AND `ns_name`!='Summary' AND `ns_name`!='Summary talk' ORDER BY `ns_id` ASC";
 
-$result_ns=mysql_query($query_ns);
+$result_ns=mysqli_query($query_ns);
 
-$num_ns=mysql_numrows($result_ns);
+$num_ns=mysqli_numrows($result_ns);
 
 $tot_ns=0;
 
@@ -22,8 +22,8 @@ echo "<form action=\"answer.php\" method=\"get\">
 
 while ($tot_ns < $num_ns)
 {
-$ns_id=mysql_result($result_ns,$tot_ns,"ns_id");
-$ns_name=mysql_result($result_ns,$tot_ns,"ns_name");
+$ns_id=mysqli_result($result_ns,$tot_ns,"ns_id");
+$ns_name=mysqli_result($result_ns,$tot_ns,"ns_name");
 
 if ($ns_name == '') {$ns_name='(Article)';}
 
