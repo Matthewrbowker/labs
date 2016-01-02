@@ -73,7 +73,7 @@ class site {
 
 	}
 	
-	function gen_opening_boostrap() {
+	function gen_opening() {
 		echo <<< ENDL
 <HTML>
 <HEAD>
@@ -97,8 +97,8 @@ crossorigin="anonymous">
 <div class="col-md-10">
 ENDL;
 	}
-	
-	function gen_opening() {
+
+	function gen_opening_old() {
 		$this -> gen_opening_boostrap();
 		return;
 		?>
@@ -124,9 +124,9 @@ ENDL;
 		 win.focus();
 		}
 		// -->
-		</script> 
+		</script>
 		</head>
-		
+
 		<body<?= (isset($this->onload) && $this->onload != '') ? " " . $this->onload : "" ?>>
 		<div id="fullbody">
 		<div id="heading">
@@ -163,7 +163,7 @@ ENDL;
 			<?
 	}
 	
-	function gen_closing_bootstrap() {
+	function gen_closing() {
 		echo <<<ENDL
 		 <div class="footer">
         <p style="text-align:right"><small>Wikimedia Labs tools &middot; Written by Matthewrbowker &middot; Core Version {$this->versions['root']['version']} &middot; Tool Version {$this->version}<br />
@@ -185,7 +185,7 @@ ENDL;
 ENDL;
 	}
 	
-	function gen_closing() {
+	function gen_closing_old() {
 		//generate the closing HTML
 		
 		$this -> gen_closing_bootstrap();
