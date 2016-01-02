@@ -158,9 +158,8 @@ ENDL;
 		</div>
 		</div>
 		<? endif; ?>
-			<?
-	}
 ENDL;
+	}
 	
 	function gen_closing() {
 		echo <<<ENDL
@@ -192,7 +191,7 @@ ENDL;
 		$finish = $time;
 		$total_time = round(($finish - $this->starttime), 4);
 		
-		?>
+		echo <<< ENDL
         <br>
         <br>
         <div class="vertime">Core version <?=$this->versions['root']['version']?><? if($this->home != 'true'): ?>
@@ -210,7 +209,7 @@ ENDL;
         </div>
         </body>
         </html>
-<?
+ENDL;
 	}
 	
 	function __destruct() {
