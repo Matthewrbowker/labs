@@ -7,7 +7,7 @@ $db = mysqli_connect($wpServer, $sqlUser, $sqlPw, $wpDb);
  
 //mysqli_select_db($db, $wpDb);
 
-sql_error_ckeck($db);
+sql_error_check($db);
 
 $query="SELECT page_title, rd_namespace, rd_title
 FROM " . $wpDbTablePrefix . "page p
