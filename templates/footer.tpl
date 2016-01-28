@@ -2,8 +2,9 @@
 
 <!--footer.tpl-->
 <div class="footer">
-    <p style="text-align:right"><small>Wikimedia Labs tools &middot; Written by Matthewrbowker &middot; Core Version {$rootVersion} &middot; Tool Version {$version}<br />
-            <a href="http://localhost/~wiki/index.php?title=Article_request%2Fconfig%2Finterface" target=_blank>Edit this page</a> &middot; <a href="http://localhost/~wiki/index.php?title=Article_request%2Fconfig%2Finterface%2Fall" target=_blank>Edit this tool</a> &middot; <a href="about.php"\>About this tool</a> </small>
+    <p style="text-align:right">
+        <small>Wikimedia Labs tools &middot; Written by Matthewrbowker &middot; Core Version {$rootVersion}
+            &middot; Tool Version {$version}</small>
     </p>
 </div>
 </div>
