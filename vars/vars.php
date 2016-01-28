@@ -29,9 +29,3 @@ $sqlPw = "";
 $testserver = false;
 
 $scriptloc = "scripts";
-
-
-//if (file_exists("vars." . $_SERVER["SERVER_NAME"] . ".php")) require("vars." . $_SERVER["SERVER_NAME"] . ".php");
-//else echo "File not found: \"vars." . $_SERVER["SERVER_NAME"] . ".php\"";
-
-$templateDir = "templates/";

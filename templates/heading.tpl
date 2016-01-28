@@ -3,7 +3,7 @@
 <HEAD>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>
-        {if isset($title)}
+        {if isset($title) && $title != ""}
             {$title} - Matthewrbowker's tools
         {else}
             Matthewrbowker's tools

@@ -12,51 +12,79 @@ class site {
 
         $this->smarty = new Smarty();
 
+        $smFile =  __FILE__;
+        $smFile = str_replace("\\", "/", $smFile);
+        $smFileArr = explode("/",$smFile);
+        $size = sizeof($smFileArr) - 2;
+        $smRootDir = "";
+
+        for($i = 0; $i < $size; $i++) {
+            $smRootDir .= $smFileArr[$i] . "/";
+        }
+
+        $this->smarty->setTemplateDir($smRootDir.'templates/');
+        $this->smarty->setCompileDir($smRootDir.'templates_c/');
+
         require('vars.php');
         $versions = parse_ini_file("versions.ini", true);
 
         $cwd = getcwd();
+        $cwd = str_replace("\\", "/", $cwd);
         $dirarray = explode("/",$cwd);
-        if ($dirarray[4]=='htdocs' && ISSET($dirarray[6])) $dir = $dirarray[6];
-        else if (ISSET($dirarray[5])) $dir = $dirarray[5];
-        else if (ISSET($dirarray[4])) $dir = $dirarray[4];
-        else $dir = $dirarray[3];
-        $dir = strtolower($dir);
+        $dir = strtolower($dirarray[sizeof($dirarray) - 1]);
 
         if ($dir == '~matthewrbowker' || $dir == 'labs' || $dir == 'public_html' || $dir=='htdocs') $dir = 'root';
 
         $name = $versions["$dir"]["name"] or die("Error: This tool is not registered in Matthewrbowker's tool database.");
-        $this->author = $this->versions["$dir"]["author"];
-        $this->version = $this->versions["$dir"]["version"];
-        $this->color = $this->versions["$dir"]["color"];
-        $this->font = $this->versions["$dir"]["font"];
-        $this->changelog = $this->versions["$dir"]["changelog"];
-        $this->home = $this->versions["$dir"]["home"];
-        $this->onload = $this->versions["$dir"]["onload"];
-        $this->ts_sitename = $sitename;
-        $this->ts_sn_on = $sn_on;
-        $this->ts_sitenotice = $sitenotice;
+        $author = $versions["$dir"]["author"];
+        $rootVersion = $versions["root"]["version"];
+        $version = $versions["$dir"]["version"];
+        $color = $versions["$dir"]["color"];
+        $font = $versions["$dir"]["font"];
+        $changelog = $versions["$dir"]["changelog"];
+        $home = $versions["$dir"]["home"];
+        $onload = $versions["$dir"]["onload"];
+        $ts_sitename = $sitename;
+        $ts_sn_on = $sn_on;
+        $ts_sitenotice = $sitenotice;
 
         //if ($this->onload !='') $this->onload = "," . $this->onload;
         //$this->onload = "checkjs()" . $this->onload;
         if (ISSET($this->onload) &&$this->onload != "") $this->onload = " onload = \"" . $this->onload . "\"";
 
-        if ($this->home=="true") {
-            $this->hometext="You are home!";
-            $this->abouturl="vars/about.php?tool=$dir";
-            $this->abouttext="About these tools";
-            $this->changelogurl = "vars/changelog.php?tool=$dir";
-            $this->csurl = $scriptloc . "/css.php";
-            $this->title = $sitename;
+        if ($home=="true") {
+            $hometext="You are home!";
+            $abouturl="vars/about.php?tool=$dir";
+            $abouttext="About these tools";
+            $changelogurl = "vars/changelog.php?tool=$dir";
+            $csurl = $scriptloc . "/css.php";
+            $title = "";
         }
         else {
-            $this->hometext="<a href='../'>&lt; Return home</a>\n";
-            $this->abouturl="../vars/about.php?tool=$dir";
-            $this->abouttext="About this tool";
-            $this->changelogurl = "../vars/changelog.php?tool=$dir";
-            $this->csurl = "../" .$scriptloc . "/css.php";
-            $this->title = "$this->name $sep $sitename";
+            $hometext="<a href='../'>&lt; Return home</a>\n";
+            $abouturl="../vars/about.php?tool=$dir";
+            $abouttext="About this tool";
+            $changelogurl = "../vars/changelog.php?tool=$dir";
+            $csurl = "../" .$scriptloc . "/css.php";
+            $title = "$name";
         }
+
+        $this->smarty->assign('name', $name);
+        $this->smarty->assign('author', $author);
+        $this->smarty->assign('rootVersion', $rootVersion);
+        $this->smarty->assign('version', $version);
+        $this->smarty->assign('color', $color);
+        $this->smarty->assign('font', $font);
+        $this->smarty->assign('changelog', $changelog);
+        $this->smarty->assign('onload', $onload);
+        $this->smarty->assign('sitename', $ts_sitename);
+        $this->smarty->assign('ts_sn_on', $ts_sn_on);
+        $this->smarty->assign('hometext', $hometext);
+        $this->smarty->assign('abouturl', $abouturl);
+        $this->smarty->assign('abouttext', $abouttext);
+        $this->smarty->assign('changelogurl', $changelogurl);
+        $this->smarty->assign('csurl', $csurl);
+        $this->smarty->assign('title', $title);
 
     }
 
