@@ -10,4 +10,4 @@ $site -> gen_opening();
 <label for="value">Term to check: </label><input type="text" name="value" /><br />
 <input type="submit" value="Check!" /></form>
 
-<? $site -> gen_closing(); ?>
+<?php $site -> gen_closing(); ?>

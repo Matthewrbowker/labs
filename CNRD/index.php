@@ -31,7 +31,8 @@ $ignore = array('Did_you_know',
 'Writing_better_articles/Pay_attention_to_spelling',
 'Test',
 'All_pages',
-'Spam_blacklist/Log');
+'Spam_blacklist/Log',
+'MOS:FAQ');
 
 $ns=array(
 '-2'=>'Media',
@@ -113,4 +114,3 @@ $tot++;
 echo !$returning ? "<tr><td colspan=2 style=\"text-align:center; color:red;\">No redirects returned</td></tr>" : "";
 echo "</TABLE>";
 $site ->gen_closing();
-?>

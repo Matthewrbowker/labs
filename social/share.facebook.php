@@ -1,7 +1,0 @@
-<?
-
-echo <<<LABEL
-SHARING BY FACEBOOK
-LABEL;
-
-?>

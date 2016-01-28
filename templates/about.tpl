@@ -10,7 +10,7 @@
 <body>
 <table width='95%'>
     <tr>
-        <td bgcolor='<?=$color?>'><span style="color: {$font}">{$name}</span></td>
+        <td bgcolor='{$color}'><span style="color: {$font}">{$name}</span></td>
     </tr>
 </table>
 <H3>

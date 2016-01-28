@@ -5,13 +5,6 @@ $site = new site();
 
 $site -> gen_opening();
 
-/*$ts_pw = posix_getpwuid(posix_getuid());
-$ts_mycnf = parse_ini_file($ts_pw['dir'] . "/.my.cnf");
-$db = mysqli_connect('enwiki-p.rrdb.toolserver.org', $ts_mycnf['user'], $ts_mycnf['password']);
-unset($ts_mycnf, $ts_pw);
- 
-mysqli_select_db('enwiki_p', $db);*/
-
 $query = "select r1.rev_user_text, count(*)
   from page join revision as r1 on page_id=r1.rev_page
   where page_namespace=0 
@@ -33,5 +26,3 @@ order by count(*) limit 0, 30";
 echo $query;
 
 $site -> gen_closing();
-
-?>

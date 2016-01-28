@@ -54,7 +54,7 @@ $site -> gen_opening();
 replag("s1");
 
 echo "
-This detail page includes all of the redirects on the English Wikipedia.  To exclucde common redirects, see <a href=\"index.php\">this page</a>.<br><br>";
+This detail page includes all of the redirects on the English Wikipedia.  To exclude common redirects, see <a href=\"index.php\">this page</a>.<br><br>";
 
 $tot=0;
 echo "<TABLE style=\"text-align:center;width:100%;border-collapse:collapse;\">
@@ -88,4 +88,3 @@ $tot++;
 echo "</TABLE>";
 
 $site ->gen_closing();
-?>
