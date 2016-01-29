@@ -3,9 +3,11 @@ require('../includes.php');
 
 $site = new site();
 
-$db = mysql_connect($wpServer, $sqlUser, $sqlPw);
+$db = mysqli_connect($wpServer, $sqlUser, $sqlPw, $wpDb);
  
-mysql_select_db($wpDb, $db);
+//mysqli_select_db($db, $wpDb);
+
+sql_error_check($db);
 
 $query="SELECT page_title, rd_namespace, rd_title
 FROM " . $wpDbTablePrefix . "page p
@@ -29,7 +31,8 @@ $ignore = array('Did_you_know',
 'Writing_better_articles/Pay_attention_to_spelling',
 'Test',
 'All_pages',
-'Spam_blacklist/Log');
+'Spam_blacklist/Log',
+'MOS:FAQ');
 
 $ns=array(
 '-2'=>'Media',
@@ -63,9 +66,11 @@ $ns=array(
 
 $returning = false;
 
-$result=mysql_query($query, $db);
+$result=mysqli_query($db, $query);
 
-$num=mysql_numrows($result);
+sql_error_check($db);
+
+$num=mysqli_stmt_num_rows($result);
 
 $site -> gen_opening();
 
@@ -85,9 +90,9 @@ echo "<TABLE style=\"text-align:center;width:100%;border-collapse:collapse;\">
 ";
 
 while ($tot < $num) {
-$from = mysql_result($result,$tot,"page_title");
-$to_ns = mysql_result($result,$tot,"rd_namespace");
-$to = mysql_result($result,$tot,"rd_title");
+$from = mysqli_result($result,$tot,"page_title");
+$to_ns = mysqli_result($result,$tot,"rd_namespace");
+$to = mysqli_result($result,$tot,"rd_title");
 if (!in_array($to, $ignore)) {
 
 $to_ns_rev=$ns[$to_ns];
@@ -109,4 +114,3 @@ $tot++;
 echo !$returning ? "<tr><td colspan=2 style=\"text-align:center; color:red;\">No redirects returned</td></tr>" : "";
 echo "</TABLE>";
 $site ->gen_closing();
-?>

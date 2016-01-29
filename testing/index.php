@@ -1,9 +1,8 @@
-<?
+<?php
 require('../includes.php');
 
 $site = new site();
 
-?>
-<?php $site -> gen_opening();?>
-This is a temporary test tool... contents may vary.
-<?php $site -> gen_closing(); ?>
+$site -> gen_opening();
+$site -> Display("testing.index");
+$site -> gen_closing();

@@ -3,7 +3,12 @@ require('../includes.php');
 
 $site = new site();
 
-$error = $_GET['error'] or $error="generic";
+if (isset($_GET['error'])) {
+    $error = $_GET['error'];
+}
+else {
+    $error="generic";
+}
 
 $errordata = array(
 '400' => array('brief' => 'Bad Request', 'full' => 'The request could not be understood by the server due to malformed syntax.'),
@@ -30,16 +35,11 @@ $errordata = array(
 'generic' => array('brief' => 'Error', 'full' => 'We were unable to process your error.  Please try again later')
 );
 
-$site -> gen_opening(); ?>
+$site -> gen_opening();
 
-<br>
-An error has occured!  Data on the error is below:
-<br>
-<ul>
-<li><b>Error number</b>: <?=$error?></li>
-<li><b>Description</b>: <?=$errordata[$error]['full']?>
-</ul>
+$site->assign('error', $error);
+$site->assign('errorData', $errordata[$error]['full']);
 
-Feel free to contact me <a href="http://en.wikipedia.org/w/index.php?title=User_talk:Matthewrbowker&amp;action=edit&amp;section=new">on my talk page</a> to report this error.
+$site->Display("error.index");
 
-<?php $site -> gen_closing(); ?>
+$site -> gen_closing();

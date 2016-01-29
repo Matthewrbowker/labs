@@ -6,6 +6,6 @@ $site = new site();
 
 $site -> gen_opening();
 
-$site -> gen_closing();
+$site -> Display("api.docs");
 
-?>
+$site -> gen_closing();
