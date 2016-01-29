@@ -1,15 +1,17 @@
-<?
+<?php
 require('../includes.php');
 
 $site = new site();
 
-$check = $_GET['value'];
 
-if (!ISSET($check) || $check == "") {
-	new_genheader();
+if (!ISSET($_GET['value']) || $_GET['value'] == "") {
+	$site->gen_opening();
 	echo "Error getting value!";
-	new_genfooter();
+	$site->gen_closing();
 	die();
+}
+else {
+	$check = $_GET['value'];
 }
 
 $url = array('http://en.wikipedia.org/wiki/Mediawiki:Titleblacklist?action=raw|local', 'http://meta.wikimedia.org/wiki/Title_blacklist?action=raw|global');
@@ -66,5 +68,3 @@ echo "</ul>
 <a href=\"index.php\">&lt; Try another search</a>";
 
 $site -> gen_closing();
-
-?>

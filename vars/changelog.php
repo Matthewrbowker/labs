@@ -1,9 +1,7 @@
 <?php
-require('functions.php');
-require('vars.php');
-$start = starttime();
+require("../includes.php");
 
-$dir = $_GET['tool'];
+$dir = $_GET['tool'] or $dir = "root";
 
 $versions = parse_ini_file('versions.ini', true);
 
@@ -12,10 +10,7 @@ $font = $versions["$dir"]["font"];
 $name = $versions["$dir"]["name"];
 $log = $versions["$dir"]["changelog"];
 
-/*$log = $_GET['log'] or die('Error getting log');
-$color = $_GET['color'] or die('Error getting log');
-$font = $_GET['font'] or die('Error getting log');
-$name = $_GET['name'] or die('Error getting log');*/
+$site = new site(false);
 
 $color = "#$color";
 
@@ -27,33 +22,15 @@ else {
 $data = parse_ini_file("logs/$log.ini", true);
 }
 
-$totnum = count($data);
+$totnum = count($data) - 1;
 
-$totnum = $totnum-1; ?>
-
-<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>
-<HTML>
-<HEAD>
-<TITLE>
-Changelog - <?=$name?>
-</TITLE>
-<meta http-equiv='Content-Type' content='text/html;charset=utf-8' >
-<link rel="stylesheet" href="../scripts/css.php?color=ffffff" />
-</HEAD>
-<BODY>
-<table width='95%'>
-<tr>
-<td bgcolor='<?=$color?>'><font color='<?=$font?>'><?=$name?></font></td>
-</tr>
-</table>
-<H3>Changelog</H3>
-<?php
+$buffer = "";
 
 while (0 <= $totnum) {
 $changes = $data[$totnum]['changes'];
 
 $changes = str_replace("\n","</li>\r<li>",$changes);
-echo "<H4>" . $data[$totnum]['version'] . "</H4>\r
+$buffer .= "<H4>" . $data[$totnum]['version'] . "</H4>\r
 <UL>
 <li>" . $changes . "</li>
 </UL>\r\r";
@@ -61,12 +38,10 @@ echo "<H4>" . $data[$totnum]['version'] . "</H4>\r
 $totnum = $totnum-1;
 
 }
-?>
-<br />
-<br />
-<center>
-<a href='#' onclick='javascript:self.close()'>X&nbsp;&nbsp;&nbsp;Close this window</a>
-</center>
-<?php endtime($start);
 
-?>
+$site->assign("clcontents", $buffer);
+$site->assign("color", $color);
+$site->assign("font", $font);
+$site->assign("name", $name);
+
+$site->Display('changelog');

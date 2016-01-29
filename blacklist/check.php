@@ -1,4 +1,4 @@
-<?
+<?php
 require('../includes.php');
 
 $site = new site();
@@ -67,5 +67,3 @@ echo "</ul>
 <a href=\"index.php\">&lt; Try another search</a>";
 
 $site -> gen_closing();
-
-?>

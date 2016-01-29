@@ -1,13 +1,13 @@
 <?php
 
-// Configuration variables
-require('vars/vars.php'); //Starting config variables
-require("vars/vars." . $_SERVER["SERVER_NAME"] . ".php");
-
 // Supporting files
 require('vars/site.php'); // Site wrapper - make it look pretty ^^
 require('vars/functions.php'); // Functions
 
-// More config files can go here.
+require_once('lib/smarty/Smarty.class.php');
 
-?>
+// Configuration variables
+require('vars/vars.php'); //Starting config variables
+// if (file_exists("vars/vars." . $_SERVER["SERVER_NAME"] . ".php")) {require("vars/vars." . $_SERVER["SERVER_NAME"] . ".php"); }
+
+if (file_exists("vars/vars.local.inc.php")) { require("vars/vars.local.inc.php"); }
