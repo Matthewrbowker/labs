@@ -10,4 +10,4 @@ require_once('lib/smarty/Smarty.class.php');
 require('vars/vars.php'); //Starting config variables
 // if (file_exists("vars/vars." . $_SERVER["SERVER_NAME"] . ".php")) {require("vars/vars." . $_SERVER["SERVER_NAME"] . ".php"); }
 
-if (file_exists("vars/vars.local.inc.php")) { require("vars/vars.local.inc.php"); }
+include("vars/vars.local.inc.php");
