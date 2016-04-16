@@ -80,3 +80,6 @@
     <div class="col-md-1">&nbsp;</div>
     <div class="col-md-10">
 
+        {if (isset($ts_sn_on) && $ts_sn_on && isset($ts_sitenotice) && $ts_sitenotice != "")}
+            <div class="alert alert-warning" role="alert">{$ts_sitenotice}</div>
+        {/if}

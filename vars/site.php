@@ -5,6 +5,8 @@ class site {
 
     function __construct($build = true) {
 
+        global $sitenotice, $sn_on, $sitename;
+
         $this->smarty = new Smarty();
 
         $smFile = __FILE__;
@@ -27,6 +29,7 @@ class site {
             $this->starttime = $time;
 
             require('vars.php');
+            require('vars.local.inc.php');
             $versions = parse_ini_file("versions.ini", true);
 
             $cwd = getcwd();
@@ -80,6 +83,7 @@ class site {
             $this->smarty->assign('onload', $onload);
             $this->smarty->assign('sitename', $ts_sitename);
             $this->smarty->assign('ts_sn_on', $ts_sn_on);
+            $this->smarty->assign('ts_sitenotice', $ts_sitenotice);
             $this->smarty->assign('hometext', $hometext);
             $this->smarty->assign('abouturl', $abouturl);
             $this->smarty->assign('abouttext', $abouttext);
