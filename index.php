@@ -34,9 +34,6 @@ for($i=0,$c=count($data);$i<$c;$i++) {
 	elseif ($data[$keys[$i]]['homepage'] == '' || !isset($data[$keys[$i]]['home'])) {
 		//Do nothing
 	}
-	else {
-		echo "<div id=\"sitenotice\"><div id=\"sn-content\">There was an error classifying \"" . $data[$keys[$i]]['name'] . ".\"</div></div><br />";
-	}
 }
 
 $bots .= "</ul>";
