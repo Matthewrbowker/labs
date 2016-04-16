@@ -2,7 +2,6 @@
 
 // Supporting files
 require('vars/site.php'); // Site wrapper - make it look pretty ^^
-require('vars/functions.php'); // Functions
 
 require_once('lib/smarty/Smarty.class.php');
 
