@@ -1,10 +1,11 @@
 <?php
 require("includes.php");
 
-$site = new site();
+$config = new config();
 
-$site ->gen_opening();
+$site = new site($config);
 
+$testserver = false;
 if (isset($_GET['test'])) $testserver = true;
 
 $bots = "<ul>\n";
@@ -45,5 +46,7 @@ $site->assign("tools", $tools);
 $site->assign("testserver", $testserver);
 $site->assign("test", $test);
 
+$site ->gen_opening();
+$config->dump();
 $site->Display("index");
 $site->gen_closing();

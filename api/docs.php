@@ -2,7 +2,9 @@
 require("../includes.php");
 // Docs of the APIs live here
 
-$site = new site();
+$config = new config();
+
+$site = new site($config);
 
 $site -> gen_opening();
 

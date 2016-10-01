@@ -2,25 +2,31 @@
 
 class config {
     private $values;
+    private $tools;
+
     public function __construct()
     {
         $this->values = [];
 
-        $vars1 = parse_ini_file('vars.ini', true);
+        $vars = parse_ini_file('vars.ini', true);
 
-        foreach($vars1 as $key => $value) {
+        foreach($vars as $key => $value) {
             $this->set($key, $value);
         }
+        unset($vars);
+
+        $this->tools = parse_ini_file("versions.ini", true);
 
         if(file_exists("vars.local.inc.ini")) {
 
-            $vars2 = parse_ini_file('vars.local.inc.ini', true);
+            $vars = parse_ini_file('vars.local.inc.ini', true);
 
-            foreach($vars1 as $key => $value) {
+            foreach($vars as $key => $value) {
                 $this->set($key, $value);
             }
-
+            unset($vars);
         }
+
     }
 
     public function __destruct()
@@ -42,5 +48,13 @@ class config {
 
     public function exists($key) {
         return array_key_exists($key, $this->values);
+    }
+
+    public function dump() {
+        var_dump($this->values);
+    }
+
+    public function getTool($tool) {
+        return $this->tools[$tool] or die("This tool is missing");
     }
 }

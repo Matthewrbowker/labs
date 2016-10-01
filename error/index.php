@@ -1,7 +1,9 @@
 <?php
 require('../includes.php');
 
-$site = new site();
+$config = new config();
+
+$site = new site($config);
 
 if (isset($_GET['error'])) {
     $error = $_GET['error'];

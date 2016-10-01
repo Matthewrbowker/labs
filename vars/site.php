@@ -2,13 +2,13 @@
 
 class site {
     private $smarty;
+    private $config;
 
-    function __construct($build = true) {
-
-        global $sitenotice, $sn_on, $sitename;
-
+    function __construct(config $config, $build = true) {
         $this->smarty = new Smarty();
+        $this->config = $config;
 
+        // Smarty processing...
         $smFile = __FILE__;
         $smFile = str_replace("\\", "/", $smFile);
         $smFileArr = explode("/", $smFile);
@@ -21,6 +21,8 @@ class site {
 
         $this->smarty->setTemplateDir($smRootDir . 'templates/');
         $this->smarty->setCompileDir($smRootDir . 'templates_c/');
+
+
         if ($build) {
             // Start with a little time processing
             $time = microtime();
@@ -28,32 +30,28 @@ class site {
             $time = $time[1] + $time[0];
             $this->starttime = $time;
 
-            require('vars.php');
-            require('vars.local.inc.php');
-            $versions = parse_ini_file("versions.ini", true);
-
             $cwd = getcwd();
             $cwd = str_replace("\\", "/", $cwd);
             $dirarray = explode("/", $cwd);
             $dir = strtolower($dirarray[sizeof($dirarray) - 1]);
 
             if ($dir == '~matthewrbowker' || $dir == 'labs' || $dir == 'public_html' || $dir == 'htdocs') $dir = 'root';
+            
+            $versions = $config->getTool($dir);
 
-            $name = $versions["$dir"]["name"] or die("Error: This tool is not registered in Matthewrbowker's tool database.");
-            $author = $versions["$dir"]["author"];
+            $name = $versions["name"];
+            $author = $versions["author"];
             $rootVersion = $versions["root"]["version"];
-            $version = $versions["$dir"]["version"];
-            $color = $versions["$dir"]["color"];
-            $font = $versions["$dir"]["font"];
-            $changelog = $versions["$dir"]["changelog"];
-            $home = $versions["$dir"]["home"];
-            $onload = $versions["$dir"]["onload"];
-            $ts_sitename = $sitename;
-            $ts_sn_on = $sn_on;
-            $ts_sitenotice = $sitenotice;
+            $version = $versions["version"];
+            $color = $versions["color"];
+            $font = $versions["font"];
+            $changelog = $versions["changelog"];
+            $home = $versions["home"];
+            $onload = $versions["onload"];
+            $ts_sitename = $config->get("sitename");
+            $ts_sn_on = $config->get("sn_on");
+            $ts_sitenotice = $config->get("sitenotice");
 
-            //if ($this->onload !='') $this->onload = "," . $this->onload;
-            //$this->onload = "checkjs()" . $this->onload;
             if (ISSET($this->onload) && $this->onload != "") $this->onload = " onload = \"" . $this->onload . "\"";
 
             if ($home == "true") {
@@ -61,14 +59,14 @@ class site {
                 $abouturl = "vars/about.php?tool=$dir";
                 $abouttext = "About these tools";
                 $changelogurl = "vars/changelog.php?tool=$dir";
-                $csurl = $scriptloc . "/css.php";
+                $csurl = $config->get("scriptloc") . "/css.php";
                 $title = "";
             } else {
                 $hometext = "<a href='../'>&lt; Return home</a>\n";
                 $abouturl = "../vars/about.php?tool=$dir";
                 $abouttext = "About this tool";
                 $changelogurl = "../vars/changelog.php?tool=$dir";
-                $csurl = "../" . $scriptloc . "/css.php";
+                $csurl = "../" . $config->get("scriptloc") . "/css.php";
                 $title = "$name";
             }
 
@@ -90,6 +88,7 @@ class site {
             $this->smarty->assign('changelogurl', $changelogurl);
             $this->smarty->assign('csurl', $csurl);
             $this->smarty->assign('title', $title);
+            $this->smarty->assign('wpHref', $config->get("wpHref"));
         }
 
     }
