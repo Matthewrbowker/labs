@@ -30,7 +30,7 @@ class site {
 
             $name = $versions["name"];
             $author = $versions["author"];
-            $rootVersion = $versions["root"]["version"];
+            $rootVersion = $config->getTool("root")["version"];
             $version = $versions["version"];
             $color = $versions["color"];
             $font = $versions["font"];

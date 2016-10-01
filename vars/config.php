@@ -69,6 +69,8 @@ class config {
     }
 
     public function getTool($tool) {
-        return $this->tools[$tool] or die("This tool is missing");
+        $retVal = false;
+        if (isset($this->tools[$tool])) {$retVal = $this->tools[$tool];}
+        return $retVal;
     }
 }
