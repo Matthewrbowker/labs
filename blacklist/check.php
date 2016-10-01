@@ -1,7 +1,9 @@
 <?php
 require('../includes.php');
 
-$site = new site();
+$config = new config();
+
+$site = new site($config);
 
 $check = $_GET['value'];
 
