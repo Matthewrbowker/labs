@@ -47,6 +47,5 @@ $site->assign("testserver", $testserver);
 $site->assign("test", $test);
 
 $site ->gen_opening();
-$config->dump();
 $site->Display("index");
 $site->gen_closing();

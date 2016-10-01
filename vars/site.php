@@ -8,19 +8,8 @@ class site {
         $this->smarty = new Smarty();
         $this->config = $config;
 
-        // Smarty processing...
-        $smFile = __FILE__;
-        $smFile = str_replace("\\", "/", $smFile);
-        $smFileArr = explode("/", $smFile);
-        $size = sizeof($smFileArr) - 2;
-        $smRootDir = "";
-
-        for ($i = 0; $i < $size; $i++) {
-            $smRootDir .= $smFileArr[$i] . "/";
-        }
-
-        $this->smarty->setTemplateDir($smRootDir . 'templates/');
-        $this->smarty->setCompileDir($smRootDir . 'templates_c/');
+        $this->smarty->setTemplateDir($config->get("rootDirectory") . 'templates/');
+        $this->smarty->setCompileDir($config->get("rootDirectory") . 'templates_c/');
 
 
         if ($build) {

@@ -8,23 +8,37 @@ class config {
     {
         $this->values = [];
 
-        $vars = parse_ini_file('vars.ini', true);
+        // Tool directory
+        $smFile = __FILE__;
+        $smFile = str_replace("\\", "/", $smFile);
+        $smFileArr = explode("/", $smFile);
+        $size = sizeof($smFileArr) - 2;
+        $smRootDir = "";
 
-        foreach($vars as $key => $value) {
+        for ($i = 0; $i < $size; $i++) {
+            $smRootDir .= $smFileArr[$i] . "/";
+        }
+
+        $this->set("rootDirectory", $smRootDir);
+
+        $defaultsFile = $this->get("rootDirectory") . "vars/vars.ini";
+        $configFile = $this->get("rootDirectory") . "vars/vars.local.inc.ini";
+        $versionsFile = $this->get("rootDirectory") . "vars/versions.ini";
+
+        $vars1 = parse_ini_file($defaultsFile, true);
+
+        foreach($vars1 as $key => $value) {
             $this->set($key, $value);
         }
-        unset($vars);
+        $this->tools = parse_ini_file($versionsFile, true);
 
-        $this->tools = parse_ini_file("versions.ini", true);
 
-        if(file_exists("vars.local.inc.ini")) {
+        if(file_exists($configFile)) {
+            $vars2 = parse_ini_file($configFile, true);
 
-            $vars = parse_ini_file('vars.local.inc.ini', true);
-
-            foreach($vars as $key => $value) {
+            foreach($vars2 as $key => $value) {
                 $this->set($key, $value);
             }
-            unset($vars);
         }
 
     }
@@ -36,7 +50,7 @@ class config {
 
     public function get($key) {
         $retVal = "";
-        if (array_key_exists($key, $this->values)) {
+        if ($this->exists($key)) {
             $retVal = $this->values[$key];
         }
         return $retVal;
