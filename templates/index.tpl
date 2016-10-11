@@ -1,7 +1,7 @@
 Hello and welcome!  I'm <a href="{$wpHref}User:Matthewrbowker" target=_blank>Matthew</a> and these are my tools!
 <br>
 <br>
-I have the following tools avalible:
+I have the following tools available:
 <br>
 <br>
 
