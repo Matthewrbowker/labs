@@ -1,0 +1,16 @@
+{
+    "name": "matthewrbowker/labs",
+    "description": "Matthewrbowker's tools on Wikimedia Tool Labs",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Matthew Bowker",
+            "email": "matthewrbowker@me.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "v3.3.7",
+        "smarty/smarty": "v3.1.30"
+    }
+}

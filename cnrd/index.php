@@ -1,38 +1,30 @@
 <?php
 require('../includes.php');
 
-$site = new site();
+$config = new config();
 
-$db = mysqli_connect($wpServer, $sqlUser, $sqlPw, $wpDb);
- 
-//mysqli_select_db($db, $wpDb);
+$site = new site($config);
 
-sql_error_check($db);
+$full = false;
 
-$query="SELECT page_title, rd_namespace, rd_title
-FROM " . $wpDbTablePrefix . "page p
-INNER JOIN " . $wpDbTablePrefix . "redirect r on r.rd_from = p.page_id
-WHERE r.rd_namespace NOT IN ( 0, 4, 10, 12, 14, 100 )
-AND   p.page_namespace = 0";
-/*AND rd_title NOT  IN ('Did_you_know','Main_Page','WikiProject_Transport/Maritime_transport_task_force','Requests_for_adminship','WikiProject_Jennifer_Lopez','Cite_your_sources_debate','Neutral_point_of_view','Contents','Longpages','Do_not_include_the_full_text_of_lengthy_primary_sources','Manual_of_Style/Linking','Writing_better_articles/Define_and_describe','Writing_better_articles/Establish_context','Writing_better_articles/Pay_attention_to_spelling')";*/
+if (isset($_GET["full"])) $full = true;
 
-$ignore = array('Did_you_know',
-'Main_Page',
-'WikiProject_Transport/Maritime_transport_task_force',
-'Requests_for_adminship',
-'WikiProject_Jennifer_Lopez',
-'Cite_your_sources_debate',
-'Neutral_point_of_view',
-'Contents','Longpages',
-'Do_not_include_the_full_text_of_lengthy_primary_sources',
-'Manual_of_Style/Linking',
-'Writing_better_articles/Define_and_describe',
-'Writing_better_articles/Establish_context',
-'Writing_better_articles/Pay_attention_to_spelling',
-'Test',
-'All_pages',
-'Spam_blacklist/Log',
-'MOS:FAQ');
+$db = mysqli_connect($config->get("wpServer"), $config->get("sqlUser"), $config->get("sqlPw"), $config->get("wpDb"));
+
+if (mysqli_errno($db) > 0) die(mysqli_errno($db) . ": " . mysqli_error($db));
+
+$query=sprintf("SELECT page_title, rd_namespace, rd_title
+FROM (
+  SELECT * FROM page p
+  WHERE page_is_redirect = 1
+  AND p.page_namespace = 0
+  %s
+  ) as p
+INNER JOIN (
+  SELECT * FROM redirect r
+  WHERE r.rd_namespace NOT IN (0, 4, 10, 12, 14, 100)
+  ) as r on r.rd_from = p.page_id;", (!$full ? "AND page_title NOT IN (\"Longest_Wikipedia_Article\",\"T:MP\",\"CiteYourSourcesDebate\",\"Rules_to_consider/Do_not_include_primary_sources_debate\",\"MOS:FAQ\",\"Rules_to_consier/Make_only_links_relevant_to_the_context_debate\",\"AvoidBiasDebate\",\"Define_and_Describe_Talk\",\"RulesToConsider/Establish_Context\",\"Rules_to_consider/Pay_attention_to_spelling_debate\",\"T:TDYK\",\"T:DYKT\",\"T:tdyk\")
+  " : ""));
 
 $ns=array(
 '-2'=>'Media',
@@ -68,17 +60,15 @@ $returning = false;
 
 $result=mysqli_query($db, $query);
 
-sql_error_check($db);
+if (mysqli_errno($db) > 0) die(mysqli_errno($db) . ": " . mysqli_error($db));
 
 $num=mysqli_stmt_num_rows($result);
 
 $site -> gen_opening();
 
-replag("s1");
-
 echo "
 Below is a list of Redirects that redirect outside their namespace.  I borrowed the query used to generate this report form <a href=\"http://toolserver.org/~tb/CNRS/\" target=\"_blank\">TopBannana</a>, then I adapted it to exclude several common redirects.<br><br>
-For a complete list of redirects, please see <a href=\"full.php\">this page</a>.<br />
+For a complete list of redirects, please see <a href=\"?full\">this page</a>.<br />
 <br />";
 
 $tot=0;
@@ -93,7 +83,7 @@ while ($tot < $num) {
 $from = mysqli_result($result,$tot,"page_title");
 $to_ns = mysqli_result($result,$tot,"rd_namespace");
 $to = mysqli_result($result,$tot,"rd_title");
-if (!in_array($to, $ignore)) {
+//if (!in_array($to, $ignore)) {
 
 $to_ns_rev=$ns[$to_ns];
 
@@ -108,7 +98,7 @@ echo "<TR>
 </td>
 </tr>";
 $returning = true;
-}
+//}
 $tot++;
 }
 echo !$returning ? "<tr><td colspan=2 style=\"text-align:center; color:red;\">No redirects returned</td></tr>" : "";

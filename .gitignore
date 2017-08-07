@@ -2,5 +2,9 @@
 .DS_Store
 
 /vars/vars.local.inc.php
+/vars/vars.local.inc.ini
 images/
 .idea/
+
+/vendor/
+/composer.lock

@@ -1,25 +1,33 @@
 <?php
 require("../includes.php");
 
-$dir = $_GET['tool'] or $dir = "root";
+$config = new config();
 
-$versions = parse_ini_file('versions.ini', true);
+$dir = "root";
 
-$color = $versions["$dir"]["color"];
-$font = $versions["$dir"]["font"];
-$name = $versions["$dir"]["name"];
-$log = $versions["$dir"]["changelog"];
+if (isset($_GET["tool"])) {
+    $dir = $_GET["tool"];
+}
 
-$site = new site(false);
+$versions = $config->getTool($dir);
+
+$color = $versions["color"];
+$font = $versions["font"];
+$name = $versions["name"];
+$log = $versions["changelog"];
+
+$site = new site($config, false);
 
 $color = "#$color";
 
-if (!file_exists("logs/$log.ini")) {
+$file = $config->get("rootDirectory") . "vars/logs/$log.ini";
+
+if (!file_exists($file)) {
 $data = array( 0 => array ("version" => "Error!", "changes" => "<font color=\"red\">There was an error finding your log file.  Sorry.</font>" ) );
 }
 
 else {
-$data = parse_ini_file("logs/$log.ini", true);
+$data = parse_ini_file($file, true);
 }
 
 $totnum = count($data) - 1;

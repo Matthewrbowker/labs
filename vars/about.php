@@ -1,16 +1,23 @@
 <?php
 include("../includes.php");
-$dir = $_GET["tool"] or $dir = "root";
 
-$versions = parse_ini_file('versions.ini', true);
+$config = new config();
 
-$site = new site(false);
+$dir = "root";
 
-$color = $versions["$dir"]["color"];
-$author = $versions["$dir"]["author"];
-$font = $versions["$dir"]["font"];
-$name = $versions["$dir"]["name"];
-$version = $versions["$dir"]["version"];
+if (isset($_GET["tool"])) {
+    $dir = $_GET["tool"];
+}
+
+$versions = $config->getTool($dir);
+
+$site = new site($config, false);
+
+$color = $versions["color"];
+$author = $versions["author"];
+$font = $versions["font"];
+$name = $versions["name"];
+$version = $versions["version"];
 
 $color="#$color" or die('Colour problem.');
 

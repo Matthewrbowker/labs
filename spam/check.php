@@ -1,8 +1,9 @@
 <?php
 require('../includes.php');
 
-$site = new site();
+$config = new config();
 
+$site = new site($config);
 
 if (!ISSET($_GET['value']) || $_GET['value'] == "") {
 	$site->gen_opening();
